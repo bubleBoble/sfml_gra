@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "../bin/OUTPUT.pdb"
   "CMakeFiles/OUTPUT.dir/src/main.cpp.obj"
   "CMakeFiles/OUTPUT.dir/src/main.cpp.obj.d"
+  "CMakeFiles/OUTPUT.dir/src/point.cpp.obj"
+  "CMakeFiles/OUTPUT.dir/src/point.cpp.obj.d"
   "libOUTPUT.dll.a"
 )
 

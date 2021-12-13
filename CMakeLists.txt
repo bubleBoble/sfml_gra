@@ -10,6 +10,7 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 # kompiluje pojedyńczo
 add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/main.cpp
+    ${CMAKE_SOURCE_DIR}/src/point.cpp
 )
 # ------------------------- kozak
 

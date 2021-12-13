@@ -1,11 +1,23 @@
 #include "config.h"
+#include "point.h"
 #include <sstream>
 #include <string>
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include <vector>
+#include <cmath>
+#include <ctime>
+#include <cstdlib>
 
+#define log(x) std::cout << x << std::endl;                                                                     // Makro pomocnicze (można to zrobić w lepszy sposób)
+
+#define randomRangeInt(l, h) (rand() % (h - l + 1) + l)                                                         // Makro użyte do losowego generowania wielkości i prędkości              
+#define randomRangefloat(l, h) (l + static_cast <float> (rand()) / ( static_cast <float> (RAND_MAX/(h-l))))     // kulek
 
 int main() {
+
+    // Radnom seed init
+    srand(time(0));
 
     // Create window
     sf::VideoMode vm(SC_WIDTH, SC_HEIGHT);
@@ -31,7 +43,7 @@ int main() {
     unsigned int c = 212;
     BackgroundSprite.setColor(sf::Color(c,c,c,255));
 
-    
+    // Init Hub variables
     int score = 0;
     int lives = 3;
 
@@ -41,6 +53,23 @@ int main() {
     hud.setCharacterSize(24);
     hud.setFillColor(sf::Color::White);
     hud.setPosition(10.f, 10.f);
+
+    // Point object
+    // point::Point ball(SC_WIDTH/2, SC_HEIGHT/2, POINT_RADIUS);
+
+    // making vector of point objects
+    std::vector<point::Point> points;
+
+    // małe punkty mają być większe.
+
+    for(int i = 0; i<1; i++){
+        int rand_radius = randomRangefloat(15, 20);
+        float rand_speed_X = randomRangefloat(-4, 4);
+        float rand_speed_Y = randomRangefloat(-4, 4);
+        point::Point pt(SC_WIDTH/2, SC_HEIGHT/2, rand_radius, rand_speed_X, rand_speed_Y);
+        points.push_back(pt);
+        log(rand_radius);
+    }
 
     // Clock for timing everything
     sf::Clock clock;
@@ -88,8 +117,29 @@ int main() {
         sf::Time dt = clock.restart();
 
         // Handle ball hiting the bottom etc. logika jak zmiana kierunku ruchu itd.
-        ;
-        ;
+        // many balls
+        for (point::Point& p: points) {
+            p.update(dt);
+            sf::FloatRect ballPos = p.getPos();
+        
+            if ( ((p.getPos().left+2*p.getRadius()) > SC_WIDTH) || (p.getPos().left < 0) ) {
+                p.reboundSide(); 
+            } else if ( ((p.getPos().top+2*p.getRadius()) > SC_HEIGHT) || (p.getPos().top < 0) ) {
+                p.reboundTopBot();
+        }
+        }
+
+        // // one ball
+        // ball.update(dt);
+
+        // sf::FloatRect ballPos = ball.getPos();
+        
+        // if ( ((ball.getPos().left+2*POINT_RADIUS) > SC_WIDTH) || (ball.getPos().left < 0) ) {
+        //      ball.reboundSide(); 
+        // } else if ( ((ball.getPos().top+2*POINT_RADIUS) > SC_HEIGHT) || (ball.getPos().top < 0) ) {
+        //     ball.reboundTopBot();
+        // }
+        
 
         // Update HUD
         std::stringstream ss;
@@ -101,8 +151,12 @@ int main() {
          * Draw
          ****************************************/
         window.clear();
-        window.draw(hud);
         window.draw(BackgroundSprite);
+        window.draw(hud);
+        // window.draw(ball.getShape());
+        for (point::Point& p: points){
+            window.draw(p.getShape());
+        }
         window.display();
     }
 

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/zcPg/004_gra_na_infe/src/main.cpp" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj.d"
+  "C:/zcPg/004_gra_na_infe/src/point.cpp" "CMakeFiles/OUTPUT.dir/src/point.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/point.cpp.obj.d"
   )
 
 # Targets to which this target links.
