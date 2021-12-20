@@ -6,7 +6,17 @@
 },
 {
   "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\point.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\point.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/point.cpp"
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Game.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Game.cpp",
+  "file": "C:/zcPg/004_gra_na_infe/src/Game.cpp"
+},
+{
+  "directory": "C:/zcPg/004_gra_na_infe/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Entity.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Entity.cpp",
+  "file": "C:/zcPg/004_gra_na_infe/src/Entity.cpp"
+},
+{
+  "directory": "C:/zcPg/004_gra_na_infe/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Player.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Player.cpp",
+  "file": "C:/zcPg/004_gra_na_infe/src/Player.cpp"
 }
 ]

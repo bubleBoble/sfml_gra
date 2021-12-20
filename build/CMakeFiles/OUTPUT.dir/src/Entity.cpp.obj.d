@@ -1,6 +1,6 @@
-CMakeFiles/OUTPUT.dir/src/Ball.cpp.obj: \
- C:\zcPg\004_gra_na_infe\src\Ball.cpp \
- C:/zcPg/004_gra_na_infe/include/Ball.h \
+CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj: \
+ C:\zcPg\004_gra_na_infe\src\Entity.cpp \
+ C:/zcPg/004_gra_na_infe/include/Entity.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -210,4 +210,6 @@ CMakeFiles/OUTPUT.dir/src/Ball.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Glsl.inl \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp
+ C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ C:/zcPg/004_gra_na_infe/include/config.h

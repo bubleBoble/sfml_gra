@@ -161,6 +161,78 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run.dir\build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+src/Entity.obj: src/Entity.cpp.obj
+.PHONY : src/Entity.obj
+
+# target to build an object file
+src/Entity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj
+.PHONY : src/Entity.cpp.obj
+
+src/Entity.i: src/Entity.cpp.i
+.PHONY : src/Entity.i
+
+# target to preprocess a source file
+src/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.i
+.PHONY : src/Entity.cpp.i
+
+src/Entity.s: src/Entity.cpp.s
+.PHONY : src/Entity.s
+
+# target to generate assembly for a file
+src/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.s
+.PHONY : src/Entity.cpp.s
+
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/Player.obj: src/Player.cpp.obj
+.PHONY : src/Player.obj
+
+# target to build an object file
+src/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -185,30 +257,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/point.obj: src/point.cpp.obj
-.PHONY : src/point.obj
-
-# target to build an object file
-src/point.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/point.cpp.obj
-.PHONY : src/point.cpp.obj
-
-src/point.i: src/point.cpp.i
-.PHONY : src/point.i
-
-# target to preprocess a source file
-src/point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/point.cpp.i
-.PHONY : src/point.cpp.i
-
-src/point.s: src/point.cpp.s
-.PHONY : src/point.s
-
-# target to generate assembly for a file
-src/point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/point.cpp.s
-.PHONY : src/point.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,12 +269,18 @@ help:
 	@echo ... rebuild_cache
 	@echo ... run
 	@echo ... OUTPUT
+	@echo ... src/Entity.obj
+	@echo ... src/Entity.i
+	@echo ... src/Entity.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/point.obj
-	@echo ... src/point.i
-	@echo ... src/point.s
 .PHONY : help
 
 

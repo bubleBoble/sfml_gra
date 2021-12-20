@@ -2,10 +2,14 @@ file(REMOVE_RECURSE
   "../bin/OUTPUT.exe"
   "../bin/OUTPUT.exe.manifest"
   "../bin/OUTPUT.pdb"
+  "CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj"
+  "CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj.d"
+  "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj"
+  "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj.d"
+  "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj"
+  "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj.d"
   "CMakeFiles/OUTPUT.dir/src/main.cpp.obj"
   "CMakeFiles/OUTPUT.dir/src/main.cpp.obj.d"
-  "CMakeFiles/OUTPUT.dir/src/point.cpp.obj"
-  "CMakeFiles/OUTPUT.dir/src/point.cpp.obj.d"
   "libOUTPUT.dll.a"
 )
 

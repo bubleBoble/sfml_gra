@@ -10,9 +10,12 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 # kompiluje pojedyńczo
 add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/main.cpp
-    ${CMAKE_SOURCE_DIR}/src/point.cpp
+    ${CMAKE_SOURCE_DIR}/src/Game.cpp
+    ${CMAKE_SOURCE_DIR}/src/Entity.cpp
+    ${CMAKE_SOURCE_DIR}/src/Player.cpp
+    
 )
-# ------------------------- kozak
+# ---------------------------
 
 # # kompiluje wszystkie pliki cpp z src
 # FILE(GLOB source_files ${CMAKE_SOURCE_DIR}/src/*.cpp)
@@ -20,7 +23,7 @@ add_executable(OUTPUT
 # add_executable(OUTPUT
 #     ${source_files}
 # )
-# # ------------------------- debil
+# # ------------------------- 
 
 add_custom_target(
     run COMMAND ..\\bin\\OUTPUT.exe

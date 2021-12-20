@@ -1,7 +1,6 @@
-CMakeFiles/OUTPUT.dir/src/point.cpp.obj: \
- C:\zcPg\004_gra_na_infe\src\point.cpp \
- C:/zcPg/004_gra_na_infe/include/point.h \
- C:/zcPg/004_gra_na_infe/include/config.h \
+CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: \
+ C:\zcPg\004_gra_na_infe\src\Game.cpp \
+ C:/zcPg/004_gra_na_infe/include/Game.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -211,4 +210,8 @@ CMakeFiles/OUTPUT.dir/src/point.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Glsl.inl \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
- C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp
+ C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+ C:/zcPg/004_gra_na_infe/include/Player.h \
+ C:/zcPg/004_gra_na_infe/include/config.h \
+ C:/zcPg/004_gra_na_infe/include/Entity.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream
