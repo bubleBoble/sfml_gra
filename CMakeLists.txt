@@ -13,6 +13,7 @@ add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/Game.cpp
     ${CMAKE_SOURCE_DIR}/src/Entity.cpp
     ${CMAKE_SOURCE_DIR}/src/Player.cpp
+    ${CMAKE_SOURCE_DIR}/src/Hud.cpp
     
 )
 # ---------------------------

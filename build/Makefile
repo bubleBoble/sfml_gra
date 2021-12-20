@@ -209,6 +209,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Hud.obj: src/Hud.cpp.obj
+.PHONY : src/Hud.obj
+
+# target to build an object file
+src/Hud.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj
+.PHONY : src/Hud.cpp.obj
+
+src/Hud.i: src/Hud.cpp.i
+.PHONY : src/Hud.i
+
+# target to preprocess a source file
+src/Hud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.i
+.PHONY : src/Hud.cpp.i
+
+src/Hud.s: src/Hud.cpp.s
+.PHONY : src/Hud.s
+
+# target to generate assembly for a file
+src/Hud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.s
+.PHONY : src/Hud.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -275,6 +299,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Hud.obj
+	@echo ... src/Hud.i
+	@echo ... src/Hud.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

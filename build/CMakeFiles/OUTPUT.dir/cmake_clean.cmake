@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj.d"
   "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj"
   "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj.d"
+  "CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj"
+  "CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj.d"
   "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj"
   "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj.d"
   "CMakeFiles/OUTPUT.dir/src/main.cpp.obj"
