@@ -3,6 +3,8 @@
 #include <SFML/Window.hpp>
 
 #include "Player.h"
+#include "Hud.h"
+#include "FireBall.h"
 
 class Game
 {
@@ -20,7 +22,9 @@ private:
 
     /* Game objects
     **************************/
-    Player* player1;
+    Player* player;
+    Hud* hud;
+    Fireball* fireball;
 
     /* Game objects methods
     **************************/

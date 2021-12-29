@@ -185,6 +185,54 @@ src/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
+src/FireBall.obj: src/FireBall.cpp.obj
+.PHONY : src/FireBall.obj
+
+# target to build an object file
+src/FireBall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj
+.PHONY : src/FireBall.cpp.obj
+
+src/FireBall.i: src/FireBall.cpp.i
+.PHONY : src/FireBall.i
+
+# target to preprocess a source file
+src/FireBall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.i
+.PHONY : src/FireBall.cpp.i
+
+src/FireBall.s: src/FireBall.cpp.s
+.PHONY : src/FireBall.s
+
+# target to generate assembly for a file
+src/FireBall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.s
+.PHONY : src/FireBall.cpp.s
+
+src/FireballAnimation.obj: src/FireballAnimation.cpp.obj
+.PHONY : src/FireballAnimation.obj
+
+# target to build an object file
+src/FireballAnimation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj
+.PHONY : src/FireballAnimation.cpp.obj
+
+src/FireballAnimation.i: src/FireballAnimation.cpp.i
+.PHONY : src/FireballAnimation.i
+
+# target to preprocess a source file
+src/FireballAnimation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.i
+.PHONY : src/FireballAnimation.cpp.i
+
+src/FireballAnimation.s: src/FireballAnimation.cpp.s
+.PHONY : src/FireballAnimation.s
+
+# target to generate assembly for a file
+src/FireballAnimation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.s
+.PHONY : src/FireballAnimation.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -257,6 +305,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/animation2xxx.obj: src/animation2xxx.cpp.obj
+.PHONY : src/animation2xxx.obj
+
+# target to build an object file
+src/animation2xxx.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj
+.PHONY : src/animation2xxx.cpp.obj
+
+src/animation2xxx.i: src/animation2xxx.cpp.i
+.PHONY : src/animation2xxx.i
+
+# target to preprocess a source file
+src/animation2xxx.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.i
+.PHONY : src/animation2xxx.cpp.i
+
+src/animation2xxx.s: src/animation2xxx.cpp.s
+.PHONY : src/animation2xxx.s
+
+# target to generate assembly for a file
+src/animation2xxx.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.s
+.PHONY : src/animation2xxx.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -296,6 +368,12 @@ help:
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
+	@echo ... src/FireBall.obj
+	@echo ... src/FireBall.i
+	@echo ... src/FireBall.s
+	@echo ... src/FireballAnimation.obj
+	@echo ... src/FireballAnimation.i
+	@echo ... src/FireballAnimation.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
@@ -305,6 +383,9 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
+	@echo ... src/animation2xxx.obj
+	@echo ... src/animation2xxx.i
+	@echo ... src/animation2xxx.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

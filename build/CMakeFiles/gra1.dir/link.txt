@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\gra1.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\gra1.dir/objects.a @CMakeFiles\gra1.dir\objects1.rsp
+C:\MinGW\bin\mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\gra1.dir/objects.a -Wl,--no-whole-archive -o gra1.exe -Wl,--out-implib,libgra1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\gra1.dir\linklibs.rsp

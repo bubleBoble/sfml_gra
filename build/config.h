@@ -1,4 +1,6 @@
 #pragma once
+#include <cmath>
+
 #define RESOURCE_PATH "../content/"     // Path relative to .exe file (bin foler)
 
 #define SC_WIDTH sf::VideoMode::getDesktopMode().width
@@ -12,8 +14,6 @@
 
 #define TEST_POINT_RADIUS 70.0f
 #define TEST_ENTITY_SIZE 30.0f
-
-
 
 // help makros
 #define log(x) std::cout << x << std::endl;                                                                     // Makro pomocnicze (można to zrobić w lepszy sposób)

@@ -1,58 +1,152 @@
 #include "Entity.h"
 
-void Entity::init( sf::Vector2f _pos, sf::Vector2f _size, float _speed ) 
+
+/* Constructor & destructor
+********************************/
+void Entity::init( sf::Vector2f _pos, sf::Vector2f _scale, float _speed ) 
 {   
-    this-> m_speed = _speed;
-    this->m_shape.setPosition(
-        SC_WIDTH/2 - _size.x/2 + _pos.x, 
-        SC_HEIGHT/2 - _size.y/2 - _pos.y);
-    this->m_shape.setSize(_size);
-    this->m_shape.setFillColor(sf::Color::White);
+    setSprite("mage.png", 0, 16, 16, 16);
+    setSpriteScale(6, 6);
+    setSpritePos({SC_WIDTH/2 - getSpriteSize().x, SC_HEIGHT/2 - getSpriteSize().y });
+    setSpriteSpeed(_speed);
 }
 
-Entity::Entity( sf::Vector2f entityPos, sf::Vector2f entitySize, float entitySpeed)
+// Constructor 1
+Entity::Entity( sf::Vector2f entityPos, sf::Vector2f entityScale, float entitySpeed)
 {
-    init(entityPos, entitySize, entitySpeed);
+    init(entityPos, entityScale, entitySpeed);
 }
 
+// Constructor 2
+Entity::Entity()
+{
+    ;
+}
+
+// Destructor
 Entity::~Entity()
 {
-
+    ;
 }
 
-void Entity::render(sf::RenderTarget& target)
-{
-    target.draw(this->m_shape);
-}
-
+/* Getters & setters
+********************************/
+// Getter pos center
 sf::Vector2f Entity::getPosCenter() 
 {
-    sf::Vector2f pos = this->m_shape.getPosition();
-    pos.x = pos.x + this->m_shape.getSize().x / 2;
-    pos.y = pos.y + this->m_shape.getSize().y / 2;
+    sf::Vector2f pos = this->sprite.getPosition();
+    pos.x = pos.x + this->sprite.getGlobalBounds().width / 2;
+    pos.y = pos.y + this->sprite.getGlobalBounds().height / 2;
     return pos;
 }
 
-void Entity::move_(const float dirX, const float dirY, sf::Time dt)
+// Getter size
+sf::Vector2f Entity::getSpriteSize() 
 {
-    this->m_shape.move(
+    sf::Vector2f size;
+    size.x = this->sprite.getGlobalBounds().width;
+    size.y = this->sprite.getGlobalBounds().height;
+    return size;
+}
+
+// Setter sprite
+void Entity::setSprite(std::string textureName, int tex_x, int tex_y, int tex_width, int tex_height)
+{
+    std::string tex_path = RESOURCE_PATH;
+    tex_path += "textures/";
+    tex_path += textureName;
+    this->texture.loadFromFile(tex_path);
+    this->sprite = sf::Sprite(texture);
+    this->sprite.setTextureRect( {tex_x, tex_y, tex_width, tex_height});
+}
+
+// Setter scale
+void Entity::setSpriteScale(float scale_x, float scale_y)
+{
+    this->sprite.setScale(scale_x, scale_y);
+}
+
+// Setter speed
+void Entity::setSpriteSpeed(float speed)
+{
+    this->m_speed = speed;
+}
+
+// Setter pos
+void Entity::setSpritePos(sf::Vector2f pos)
+{
+    this->sprite.setPosition(pos);
+}
+
+// set box
+void Entity::setEntityBox(sf::Vector2f scale) 
+{
+    entityBox = sf::RectangleShape( getSpriteSize() );
+    entityBox.setPosition( 
+        this->sprite.getPosition().x - (entityBox.getSize().x * scale.x - getSpriteSize().x) / 2.f,
+        this->sprite.getPosition().y - (entityBox.getSize().y * scale.y - getSpriteSize().y) / 2.f
+        );
+    entityBox.setOutlineThickness(5);
+    entityBox.setScale(scale);
+    entityBox.setOutlineColor(sf::Color::White);
+    entityBox.setFillColor(sf::Color(255, 255, 255, 0));
+};
+
+// // set box pos
+// void Entity::setEntityBoxPos(sf::Vector2f pos)
+// {
+//     this->entityBox.setPosition();
+// }
+
+// set circle
+void Entity::setEntityCircle() 
+{
+    
+}
+
+/* Render & update
+********************************/
+
+// Render
+void Entity::render(sf::RenderTarget& target)
+{
+    target.draw(this->sprite);
+    target.draw(this->entityBox);
+}
+
+// move
+void Entity::move_(const float dirX, const float dirY, sf::Time dt)
+{   
+    this->entityCircle.move(
+        this->m_speed * dirX * dt.asSeconds(),
+        this->m_speed * dirY * dt.asSeconds()
+    );   
+
+    this->entityBox.move(
+        this->m_speed * dirX * dt.asSeconds(),
+        this->m_speed * dirY * dt.asSeconds()
+    );
+
+    this->sprite.move(
         this->m_speed * dirX * dt.asSeconds(),
         this->m_speed * dirY * dt.asSeconds()
         );
 }
 
-void Entity::updateKeyboard(sf::Time dt)
-{
-    // Move player
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-        move_(0.f, -1.f, dt);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-        move_(-1.f, 0.f, dt);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-        move_(0.f, 1.f, dt);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-        move_(1.f, 0.f, dt);
-}
+
+// Read keyboard => move
+// void Entity::updateKeyboard(sf::Time dt)
+// {
+//     // Move player
+//     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+//         move_(0.f, -1.f, dt);
+//     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+//         move_(-1.f, 0.f, dt);
+//     if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+//         move_(0.f, 1.f, dt);
+//     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+//         move_(1.f, 0.f, dt);
+// }
 
 
 

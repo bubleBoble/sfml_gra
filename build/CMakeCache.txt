@@ -283,11 +283,29 @@ CPACK_SOURCE_7Z:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=ON
 
+//Value Computed by CMake
+MyProject_BINARY_DIR:STATIC=C:/zcPg/004_gra_na_infe/build
+
+//Value Computed by CMake
+MyProject_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+MyProject_SOURCE_DIR:STATIC=C:/zcPg/004_gra_na_infe
+
 //The directory containing a CMake configuration file for SFML.
 SFML_DIR:PATH=C:/Program Files (x86)/SFML/lib/cmake/SFML
 
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
+//Value Computed by CMake
+gra1_BINARY_DIR:STATIC=C:/zcPg/004_gra_na_infe/build
+
+//Value Computed by CMake
+gra1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+gra1_SOURCE_DIR:STATIC=C:/zcPg/004_gra_na_infe
 
 
 ########################

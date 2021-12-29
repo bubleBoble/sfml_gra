@@ -1482,6 +1482,42 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "MyProject_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/zcPg/004_gra_na_infe/build"
+		},
+		{
+			"name" : "MyProject_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "MyProject_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/zcPg/004_gra_na_infe"
+		},
+		{
 			"name" : "SFML_DIR",
 			"properties" : 
 			[
@@ -1504,6 +1540,42 @@
 			],
 			"type" : "PATH",
 			"value" : "SFML_DOC_DIR-NOTFOUND"
+		},
+		{
+			"name" : "gra1_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/zcPg/004_gra_na_infe/build"
+		},
+		{
+			"name" : "gra1_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "gra1_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/zcPg/004_gra_na_infe"
 		}
 	],
 	"kind" : "cache",

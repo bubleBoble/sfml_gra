@@ -12,10 +12,14 @@ add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/main.cpp
     ${CMAKE_SOURCE_DIR}/src/Game.cpp
     ${CMAKE_SOURCE_DIR}/src/Entity.cpp
-    ${CMAKE_SOURCE_DIR}/src/Player.cpp
     ${CMAKE_SOURCE_DIR}/src/Hud.cpp
-    
+    ${CMAKE_SOURCE_DIR}/src/Player.cpp
+    ${CMAKE_SOURCE_DIR}/src/animation2xxx.cpp
+    ${CMAKE_SOURCE_DIR}/src/Fireball.cpp
+    ${CMAKE_SOURCE_DIR}/src/FireballAnimation.cpp
 )
+
+
 # ---------------------------
 
 # # kompiluje wszystkie pliki cpp z src

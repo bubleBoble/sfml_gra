@@ -213,5 +213,11 @@ CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
  C:/zcPg/004_gra_na_infe/include/Player.h \
  C:/zcPg/004_gra_na_infe/include/config.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
  C:/zcPg/004_gra_na_infe/include/Entity.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
+ C:/zcPg/004_gra_na_infe/include/animation2xxx.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h \
+ C:/zcPg/004_gra_na_infe/include/Hud.h \
+ C:/zcPg/004_gra_na_infe/include/FireBall.h \
+ C:/zcPg/004_gra_na_infe/include/FireballAnimation.h

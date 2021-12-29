@@ -13,9 +13,11 @@ Game::Game()
 
     /* Test player object
     ****************/
-    sf::Vector2f playerPos = sf::Vector2f(0, 0);
-    sf::Vector2f playerSize = sf::Vector2f(50, 50);
-    player1 = new Player(playerPos, playerSize, 1000); 
+    player = new Player({500, 500}, 700, {10, 10});
+    /* Test hud */
+    hud = new Hud(window);
+    /* Fireball */
+    fireball = new Fireball( {700, 200}, 1000, {0.2, 0.2} );
 }
 
 Game::~Game()
@@ -24,7 +26,9 @@ Game::~Game()
 
     /* Delete game objects
     **************************/
-    delete this->player1;
+    delete this->player;
+    delete this->hud;
+    delete this->fireball;
 }
 
 void Game::run() 
@@ -44,20 +48,29 @@ void Game::run()
     }
 }
 
-void Game::update(sf:: Time dt)
+void Game::update(sf::Time dt)
 {
-    player1->updateKeyboard(dt);
+    player->updateKeyboard(dt);
+    player->update( dt );
+
+    fireball->updateKeyboard(dt);
+    fireball->update( dt );
+    this->hud->update( player->getPosCenter().x, player->getPosCenter().y );
 }
 
 void Game::render()
 {
-    this->window->clear();
+    this->window->clear( sf::Color::Black );
 
     // Drawing coordinates
     drawCoordinates(*window);
     
     //  Drawing game objects
-    player1->render(*this->window);
+    player->render(*this->window);
+
+    fireball->render(*this->window);
+
+    hud->render(this->window);
 
     this->window->display();
 }

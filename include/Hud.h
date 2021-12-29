@@ -11,11 +11,14 @@ protected:
     sf::Text* rTop;
     sf::Font font;
 
-    void initHud();
+    sf::Vector2u bounds;
+    sf::Vector2f margins;
+
+    void initHud( sf::Vector2u _bounds );
 public:
-    Hud( sf::RenderTarget& target );
+    Hud( sf::RenderTarget* target );
     ~Hud();
 
-    void render();
-    void update();
+    void render( sf::RenderTarget* target );
+    void update( float str1, float str2 );
 };
