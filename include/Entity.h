@@ -45,5 +45,7 @@ public:
     void setSpritePos(sf::Vector2f pos);
 
     void setEntityBox(sf::Vector2f scale);
-    void setEntityCircle();
+    void moveEntityBox( sf::Vector2f move );
+    void setEntityCircle(sf::Vector2f scale);
+    void moveEntityCircle(sf::Vector2f pos);
 };

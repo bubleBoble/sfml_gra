@@ -24,7 +24,11 @@ private:
     **************************/
     Player* player;
     Hud* hud;
-    Fireball* fireball;
+
+    Fireball* RL_fireball;
+    Fireball* LR_fireball;
+    Fireball* UD_fireball;
+    Fireball* DU_fireball;
 
     /* Game objects methods
     **************************/

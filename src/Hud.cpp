@@ -15,12 +15,12 @@ void Hud::initHud( sf::Vector2u _bounds )
     lTop->setFont( font );
     lTop->setCharacterSize( 30 );
     lTop->setPosition( 20, 20 );
-    lTop->setFillColor( sf::Color::White );
+    lTop->setFillColor( sf::Color::Black );
 
     rTop->setFont(font);
     rTop->setCharacterSize( 30 );
     rTop->setPosition( 20, this->lTop->getGlobalBounds().height+50 );
-    rTop->setFillColor( sf::Color::White );
+    rTop->setFillColor( sf::Color::Black );
 }
 
 Hud::Hud( sf::RenderTarget* target  )

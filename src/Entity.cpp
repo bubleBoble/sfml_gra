@@ -82,26 +82,43 @@ void Entity::setSpritePos(sf::Vector2f pos)
 void Entity::setEntityBox(sf::Vector2f scale) 
 {
     entityBox = sf::RectangleShape( getSpriteSize() );
+    entityBox.setScale(scale);
     entityBox.setPosition( 
         this->sprite.getPosition().x - (entityBox.getSize().x * scale.x - getSpriteSize().x) / 2.f,
         this->sprite.getPosition().y - (entityBox.getSize().y * scale.y - getSpriteSize().y) / 2.f
         );
-    entityBox.setOutlineThickness(5);
-    entityBox.setScale(scale);
-    entityBox.setOutlineColor(sf::Color::White);
+    entityBox.setOutlineThickness(3);
+    
+    entityBox.setOutlineColor(sf::Color::Red);
     entityBox.setFillColor(sf::Color(255, 255, 255, 0));
 };
 
-// // set box pos
-// void Entity::setEntityBoxPos(sf::Vector2f pos)
-// {
-//     this->entityBox.setPosition();
-// }
+
+// move box
+void Entity::moveEntityBox( sf::Vector2f move )
+{
+    this->entityBox.setPosition(move);
+}
+
 
 // set circle
-void Entity::setEntityCircle() 
+void Entity::setEntityCircle(sf::Vector2f scale) 
 {
-    
+    this->entityCircle = sf::CircleShape( 15 );
+    this->entityCircle.setPosition(
+        this->sprite.getPosition().x,
+        this->sprite.getPosition().y
+    );
+    this->entityCircle.setOutlineThickness(3);
+    this->entityCircle.setScale(scale);
+    this->entityCircle.setOutlineColor(sf::Color::Red);
+    this->entityCircle.setFillColor(sf::Color(255, 255, 255, 0));    
+}
+
+// Set circle pos
+void Entity::moveEntityCircle(sf::Vector2f pos) 
+{
+    this->entityCircle.move( {pos} );
 }
 
 /* Render & update
@@ -112,6 +129,7 @@ void Entity::render(sf::RenderTarget& target)
 {
     target.draw(this->sprite);
     target.draw(this->entityBox);
+    target.draw(this->entityCircle);
 }
 
 // move
