@@ -38,5 +38,10 @@
   "directory": "C:/zcPg/004_gra_na_infe/build",
   "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\FireballAnimation.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\FireballAnimation.cpp",
   "file": "C:/zcPg/004_gra_na_infe/src/FireballAnimation.cpp"
+},
+{
+  "directory": "C:/zcPg/004_gra_na_infe/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Spawner.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Spawner.cpp",
+  "file": "C:/zcPg/004_gra_na_infe/src/Spawner.cpp"
 }
 ]

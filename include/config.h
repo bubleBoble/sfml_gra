@@ -3,8 +3,12 @@
 
 #define RESOURCE_PATH "../content/"     // Path relative to .exe file (bin foler)
 
-#define SC_WIDTH sf::VideoMode::getDesktopMode().width
-#define SC_HEIGHT sf::VideoMode::getDesktopMode().height
+// #define SC_WIDTH sf::VideoMode::getDesktopMode().width
+// #define SC_HEIGHT sf::VideoMode::getDesktopMode().height
+
+#define SC_WIDTH 800
+#define SC_HEIGHT 700
+
 
 #define WINDOW_WIDTH 1450.0f
 #define WINDOW_HEIGHT 800.0f

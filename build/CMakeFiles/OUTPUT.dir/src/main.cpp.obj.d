@@ -220,4 +220,5 @@ CMakeFiles/OUTPUT.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h \
  C:/zcPg/004_gra_na_infe/include/Hud.h \
  C:/zcPg/004_gra_na_infe/include/FireBall.h \
- C:/zcPg/004_gra_na_infe/include/FireballAnimation.h
+ C:/zcPg/004_gra_na_infe/include/FireballAnimation.h \
+ C:/zcPg/004_gra_na_infe/include/Spawner.h

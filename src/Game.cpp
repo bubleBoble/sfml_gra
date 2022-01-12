@@ -3,7 +3,11 @@
 
 void Game::initWindow() 
 {
-    this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::Fullscreen, settings );
+    // Full screen
+    // this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::Fullscreen, settings );
+
+    // Do debuga
+    this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::Titlebar, settings );
 }
 
 Game::Game()
@@ -17,10 +21,12 @@ Game::Game()
     /* Test hud */
     hud = new Hud(window);
     /* Fireball */
-    RL_fireball = new Fireball( {900, 400}, 500, {0.3, 0.3}, 0 );
-    LR_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 180 );
-    UD_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, -90 );
-    DU_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 90 );
+    // RL_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 0 );
+    // LR_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 180 );
+    // UD_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, -90 );
+    // DU_fireball = new Fireball( {900, 400}, 20, {0.3, 0.3}, 90 );
+    /* Spawner */
+    spawner = new Spawner(this->window, 0);
 }
 
 Game::~Game()
@@ -31,10 +37,12 @@ Game::~Game()
     **************************/
     delete this->player;
     delete this->hud;
-    delete this->RL_fireball;
-    delete this->LR_fireball;
-    delete this->UD_fireball;
-    delete this->DU_fireball;
+    // delete this->RL_fireball;
+    // delete this->LR_fireball;
+    // delete this->UD_fireball;
+    // delete this->DU_fireball;
+
+    delete this->spawner;
 }
 
 void Game::run() 
@@ -59,16 +67,17 @@ void Game::update(sf::Time dt)
     player->updateKeyboard(dt);
     player->update( dt );
 
-    // RL_fireball->updateKeyboard(dt);
-    RL_fireball->update( dt );
-    // LR_fireball->updateKeyboard(dt);
-    LR_fireball->update( dt );
-    // UD_fireball->updateKeyboard(dt);
-    UD_fireball->update( dt );
-    // DU_fireball->updateKeyboard(dt);
-    DU_fireball->update( dt );
+    // // RL_fireball->updateKeyboard(dt);
+    // RL_fireball->update( dt );
+    // // LR_fireball->updateKeyboard(dt);
+    // LR_fireball->update( dt );
+    // // UD_fireball->updateKeyboard(dt);
+    // UD_fireball->update( dt );
+    // // DU_fireball->updateKeyboard(dt);
+    // DU_fireball->update( dt );
 
     this->hud->update( player->getPosCenter().x, player->getPosCenter().y );
+    this->spawner->update( dt );
 }
 
 void Game::render()
@@ -81,10 +90,12 @@ void Game::render()
     //  Drawing game objects
     player->render(*this->window); 
 
-    RL_fireball->render(*this->window);
-    LR_fireball->render(*this->window);
-    UD_fireball->render(*this->window);
-    DU_fireball->render(*this->window);
+    // RL_fireball->render(*this->window);
+    // LR_fireball->render(*this->window);
+    // UD_fireball->render(*this->window);
+    // DU_fireball->render(*this->window);
+
+    spawner->render(*this->window);
 
     hud->render(this->window);
 

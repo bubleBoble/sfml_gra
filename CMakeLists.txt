@@ -17,6 +17,7 @@ add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/animation2xxx.cpp
     ${CMAKE_SOURCE_DIR}/src/Fireball.cpp
     ${CMAKE_SOURCE_DIR}/src/FireballAnimation.cpp
+    ${CMAKE_SOURCE_DIR}/src/Spawner.cpp
 )
 
 

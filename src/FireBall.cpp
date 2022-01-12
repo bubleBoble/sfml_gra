@@ -8,6 +8,7 @@ Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, flo
     // fireballUp("blabla"),
     // fireballDown("blabla")
 {
+    log("fireball created");
     setSpriteScale(scale.x, scale.y);
     setSpritePos( pos );
     setSpriteSpeed( speed );
@@ -47,6 +48,37 @@ Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, flo
         dir = {0.0f, 1.0f};
     } 
 }
+
+Fireball::~Fireball()
+{
+    log("fireball destroyed");
+}
+
+void Fireball::update( sf::Time dt )
+{
+    fireballLeft.update( dt.asSeconds(), this->m_speed );
+    // fireballRight.update( dt.asSeconds(), this->m_speed );
+    // fireballUp.update( dt.asSeconds(), this->m_speed );
+    // fireballDown.update( dt.asSeconds(), this->m_speed );
+
+    move_(dir.x, dir.y, dt);
+
+    fireballLeft.applyToSprite(this->sprite);
+
+    // this->entityBox.setRotation( this->getFireballRotation() );
+    // this->entityCircle.setRotation( this->getFireballRotation() );
+}
+
+void Fireball::rotateFireball( float angle )
+{
+    this->sprite.setRotation(angle);
+}
+
+float Fireball::getFireballRotation()
+{   
+    return this->sprite.getRotation();
+}
+
 
 // // ZAMIAST TEGO CIĄGŁY RUCH
 // void Fireball::updateKeyboard(sf::Time dt)
@@ -98,28 +130,3 @@ Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, flo
 //     } 
 //     dir = {0.f, 0.f};
 // }
-
-void Fireball::update( sf::Time dt )
-{
-    fireballLeft.update( dt.asSeconds(), this->m_speed );
-    // fireballRight.update( dt.asSeconds(), this->m_speed );
-    // fireballUp.update( dt.asSeconds(), this->m_speed );
-    // fireballDown.update( dt.asSeconds(), this->m_speed );
-
-    move_(dir.x, dir.y, dt);
-
-    fireballLeft.applyToSprite(this->sprite);
-
-    // this->entityBox.setRotation( this->getFireballRotation() );
-    // this->entityCircle.setRotation( this->getFireballRotation() );
-}
-
-void Fireball::rotateFireball( float angle )
-{
-    this->sprite.setRotation(angle);
-}
-
-float Fireball::getFireballRotation()
-{   
-    return this->sprite.getRotation();
-}

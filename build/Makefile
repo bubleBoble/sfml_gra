@@ -305,6 +305,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Spawner.obj: src/Spawner.cpp.obj
+.PHONY : src/Spawner.obj
+
+# target to build an object file
+src/Spawner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj
+.PHONY : src/Spawner.cpp.obj
+
+src/Spawner.i: src/Spawner.cpp.i
+.PHONY : src/Spawner.i
+
+# target to preprocess a source file
+src/Spawner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.i
+.PHONY : src/Spawner.cpp.i
+
+src/Spawner.s: src/Spawner.cpp.s
+.PHONY : src/Spawner.s
+
+# target to generate assembly for a file
+src/Spawner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.s
+.PHONY : src/Spawner.cpp.s
+
 src/animation2xxx.obj: src/animation2xxx.cpp.obj
 .PHONY : src/animation2xxx.obj
 
@@ -383,6 +407,9 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
+	@echo ... src/Spawner.obj
+	@echo ... src/Spawner.i
+	@echo ... src/Spawner.s
 	@echo ... src/animation2xxx.obj
 	@echo ... src/animation2xxx.i
 	@echo ... src/animation2xxx.s

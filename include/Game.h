@@ -5,6 +5,7 @@
 #include "Player.h"
 #include "Hud.h"
 #include "FireBall.h"
+#include "Spawner.h"
 
 class Game
 {
@@ -29,6 +30,8 @@ private:
     Fireball* LR_fireball;
     Fireball* UD_fireball;
     Fireball* DU_fireball;
+
+    Spawner* spawner;
 
     /* Game objects methods
     **************************/
