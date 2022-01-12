@@ -7,7 +7,7 @@ void Game::initWindow()
     // this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::Fullscreen, settings );
 
     // Do debuga
-    this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::Titlebar, settings );
+    this->window = new sf::RenderWindow( sf::VideoMode(SC_WIDTH, SC_HEIGHT), "GNOP", sf::Style::None, settings );
 }
 
 Game::Game()
@@ -26,7 +26,14 @@ Game::Game()
     // UD_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, -90 );
     // DU_fireball = new Fireball( {900, 400}, 20, {0.3, 0.3}, 90 );
     /* Spawner */
-    spawner = new Spawner(this->window, 0);
+    spawner = new Spawner(this->window, 0, {0 ,0});
+
+    // float r = 10;
+    // for (int i=0; i<5; i++)
+    // {
+    //     topSpawners.push_back( new Spawner(this->window, 0, {0, r}) );
+    //     r+=20;
+    // }
 }
 
 Game::~Game()
@@ -43,6 +50,10 @@ Game::~Game()
     // delete this->DU_fireball;
 
     delete this->spawner;
+    // for (int i=0; i<5; i++)
+    // {
+    //     delete topSpawners[i];
+    // }
 }
 
 void Game::run() 

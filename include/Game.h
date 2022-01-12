@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
+#include <vector>
 
 #include "Player.h"
 #include "Hud.h"
@@ -21,17 +22,23 @@ private:
 
     void initWindow();
 
+    int level;
+
     /* Game objects
     **************************/
     Player* player;
     Hud* hud;
 
-    Fireball* RL_fireball;
-    Fireball* LR_fireball;
-    Fireball* UD_fireball;
-    Fireball* DU_fireball;
+    // Fireball* RL_fireball;
+    // Fireball* LR_fireball;
+    // Fireball* UD_fireball;
+    // Fireball* DU_fireball;
 
     Spawner* spawner;
+    std::vector<Spawner*> topSpawners;
+    std::vector<Spawner*> botSpawners;
+    std::vector<Spawner*> leftSpawners;
+    std::vector<Spawner*> rightSpawners;
 
     /* Game objects methods
     **************************/

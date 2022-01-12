@@ -1,6 +1,11 @@
 #include "Fireball.h"
 
 // Constructor
+Fireball::Fireball()
+{
+    ;
+}
+
 Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, float rotation)
 :
     fireballLeft("blabla")
@@ -77,6 +82,11 @@ void Fireball::rotateFireball( float angle )
 float Fireball::getFireballRotation()
 {   
     return this->sprite.getRotation();
+}
+
+sf::Vector2f Fireball::getPosition()
+{
+    return this->sprite.getPosition();
 }
 
 

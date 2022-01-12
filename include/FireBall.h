@@ -10,6 +10,7 @@ class Fireball : public Entity{
 public:
     // Constructor
     Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, float rotation );
+    Fireball();
     ~Fireball();
     void updateKeyboard(sf::Time dt);
 
@@ -18,6 +19,7 @@ public:
     void rotateFireball( float angle );
 
     float getFireballRotation();
+    sf::Vector2f getPosition();
 
     void setBox();
 

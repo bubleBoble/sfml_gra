@@ -27,7 +27,7 @@ public:
     ********************/
     Entity( sf::Vector2f entityPos, sf::Vector2f entityScale, float entitySpeed );  
     Entity();
-    ~Entity();
+    virtual ~Entity();
 
     /* Render & update
     ********************/
