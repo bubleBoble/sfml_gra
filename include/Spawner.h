@@ -15,7 +15,7 @@ class Spawner
 {
 protected:
     sf::Vector2f spawnerPosition;
-    float timeDelay;
+    float timeDelay {0.5};
     int side;
 
     std::vector<Fireball*> fireballs;
@@ -35,4 +35,8 @@ public:
     void update(sf::Time dt);
     void draw(sf::RenderTarget& target);
     void render(sf::RenderTarget& target);
+
+    void setTimeDelay( float _timeDelay );
+
+    bool checkCollisionPlayer( sf::FloatRect player );
 };

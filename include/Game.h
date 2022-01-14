@@ -20,19 +20,18 @@ private:
     sf::RectangleShape OxLine;
     sf::RectangleShape OyLine;
 
+    sf::Clock* clockKolizja;
+
     void initWindow();
 
     int level;
+    int collisions{0};
+    int life{100};
 
     /* Game objects
     **************************/
     Player* player;
     Hud* hud;
-
-    // Fireball* RL_fireball;
-    // Fireball* LR_fireball;
-    // Fireball* UD_fireball;
-    // Fireball* DU_fireball;
 
     Spawner* spawner;
     std::vector<Spawner*> topSpawners;
@@ -42,7 +41,6 @@ private:
 
     /* Game objects methods
     **************************/
-
 
 public:
     Game();
@@ -54,4 +52,5 @@ public:
     void pollEvents();
 
     void drawCoordinates(sf::RenderTarget& target);
+
 };

@@ -15,25 +15,23 @@ Game::Game()
     settings.antialiasingLevel = 8;
     this->initWindow();
 
+    clockKolizja = new sf::Clock();
+
     /* Test player object
     ****************/
     player = new Player({500, 500}, 500, {10, 10});
     /* Test hud */
     hud = new Hud(window);
-    /* Fireball */
-    // RL_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 0 );
-    // LR_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, 180 );
-    // UD_fireball = new Fireball( {900, 400}, 50, {0.3, 0.3}, -90 );
-    // DU_fireball = new Fireball( {900, 400}, 20, {0.3, 0.3}, 90 );
-    /* Spawner */
-    spawner = new Spawner(this->window, 0, {0 ,0});
+    
+    float r = 250;
+    for (int i=0; i<1; i++)
+    {
+        topSpawners.push_back( new Spawner(this->window, 0, {r, 0}) );
+        r+=200;
+    }
 
-    // float r = 10;
-    // for (int i=0; i<5; i++)
-    // {
-    //     topSpawners.push_back( new Spawner(this->window, 0, {0, r}) );
-    //     r+=20;
-    // }
+    topSpawners[0]->setTimeDelay( 1 );
+
 }
 
 Game::~Game()
@@ -44,16 +42,11 @@ Game::~Game()
     **************************/
     delete this->player;
     delete this->hud;
-    // delete this->RL_fireball;
-    // delete this->LR_fireball;
-    // delete this->UD_fireball;
-    // delete this->DU_fireball;
 
-    delete this->spawner;
-    // for (int i=0; i<5; i++)
-    // {
-    //     delete topSpawners[i];
-    // }
+    for (auto& i : topSpawners)
+    {
+        delete i;
+    }
 }
 
 void Game::run() 
@@ -77,18 +70,22 @@ void Game::update(sf::Time dt)
 {
     player->updateKeyboard(dt);
     player->update( dt );
+    
+    for (auto& i : topSpawners)
+    {
+        i->update( dt );        
+        if ( clockKolizja->getElapsedTime().asSeconds() > 1 )
+        {
+            if ( i->checkCollisionPlayer( this->player->getBox() ) )
+            {
+                this->collisions += 1;
+                this->life -= 1;
+                clockKolizja->restart();
+            }
+        }
+    }
 
-    // // RL_fireball->updateKeyboard(dt);
-    // RL_fireball->update( dt );
-    // // LR_fireball->updateKeyboard(dt);
-    // LR_fireball->update( dt );
-    // // UD_fireball->updateKeyboard(dt);
-    // UD_fireball->update( dt );
-    // // DU_fireball->updateKeyboard(dt);
-    // DU_fireball->update( dt );
-
-    this->hud->update( player->getPosCenter().x, player->getPosCenter().y );
-    this->spawner->update( dt );
+    this->hud->update( this->collisions, this->life );
 }
 
 void Game::render()
@@ -101,12 +98,11 @@ void Game::render()
     //  Drawing game objects
     player->render(*this->window); 
 
-    // RL_fireball->render(*this->window);
-    // LR_fireball->render(*this->window);
-    // UD_fireball->render(*this->window);
-    // DU_fireball->render(*this->window);
 
-    spawner->render(*this->window);
+    for (auto& i : topSpawners)
+    {
+        i->render(*this->window);
+    }
 
     hud->render(this->window);
 

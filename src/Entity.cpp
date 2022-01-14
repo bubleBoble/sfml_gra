@@ -151,6 +151,11 @@ void Entity::move_(const float dirX, const float dirY, sf::Time dt)
         );
 }
 
+sf::FloatRect Entity::getBox()
+{
+    return this->entityBox.getGlobalBounds();
+}
+
 
 // Read keyboard => move
 // void Entity::updateKeyboard(sf::Time dt)

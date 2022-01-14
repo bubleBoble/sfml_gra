@@ -43,6 +43,6 @@ void Hud::render( sf::RenderTarget* target )
 
 void Hud::update( float str1, float str2 ) 
 {
-    this->lTop->setString( "x:  " + std::to_string( (int)str1) );
-    this->rTop->setString( "y:  " + std::to_string( (int)str2) );
+    this->lTop->setString( "collisions :  " + std::to_string( (int)str1) );
+    this->rTop->setString( "life       :  " + std::to_string( (int)str2) );
 }

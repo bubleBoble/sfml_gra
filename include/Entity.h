@@ -48,4 +48,6 @@ public:
     void moveEntityBox( sf::Vector2f move );
     void setEntityCircle(sf::Vector2f scale);
     void moveEntityCircle(sf::Vector2f pos);
+
+    sf::FloatRect getBox();
 };

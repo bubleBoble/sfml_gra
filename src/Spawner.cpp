@@ -29,15 +29,12 @@ Spawner::~Spawner()
 
 void Spawner::update(sf::Time dt)
 {
-    // spawn every 3 seconds
-    // log(clock->getElapsedTime().asSeconds());
-    if (clock->getElapsedTime().asSeconds() > 0.5)
+    if (clock->getElapsedTime().asSeconds() > this->timeDelay)
     {
-        // log(clock->getElapsedTime().asSeconds());
-        // log("tutaj create fireball");
         fireballs.push_back( new Fireball( this->spawnerPosition, 500, {0.3, 0.3}, -90 ));
         clock->restart();
     }    
+
 
     for (int i=0; i<fireballs.size(); i++)
     {
@@ -48,21 +45,6 @@ void Spawner::update(sf::Time dt)
         }
     }
 
-    // for (auto& i : fireballs)
-    // {
-    //     if ( i->getPosition().y > 600 )
-    //     {
-    //         fireballs.erase();
-    //     }
-    // }
-
-    // if ( fireballs[0]->getPosCenter().y > 1000 )
-    // {
-    //     log("erase");
-    //     // log(fireballs[0]->getPosCenter().y);
-    //     // fireballs.erase(fireballs.begin());     // usuwa zawsze pierwszy element bo wszystkie maja takie samo v
-    // }
-
     for (auto& i : fireballs)
         i->update(dt);
 }
@@ -72,4 +54,23 @@ void Spawner::render(sf::RenderTarget& target)
     target.draw(*spawnerShape);
     for (auto& i : fireballs)
         i->render(target);
+}
+
+
+void Spawner::setTimeDelay( float _timeDelay )
+{
+    this->timeDelay = _timeDelay;
+}
+
+bool Spawner::checkCollisionPlayer( sf::FloatRect player ) 
+{
+    for (auto& i : fireballs)
+    {
+        if ( i->getBox().intersects(player) )
+        {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

@@ -13,7 +13,7 @@ Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, flo
     // fireballUp("blabla"),
     // fireballDown("blabla")
 {
-    log("fireball created");
+    // log("fireball created");
     setSpriteScale(scale.x, scale.y);
     setSpritePos( pos );
     setSpriteSpeed( speed );
@@ -56,7 +56,7 @@ Fireball::Fireball( const sf::Vector2f pos, float speed, sf::Vector2f scale, flo
 
 Fireball::~Fireball()
 {
-    log("fireball destroyed");
+    // log("fireball destroyed");
 }
 
 void Fireball::update( sf::Time dt )
