@@ -2,10 +2,11 @@
 
 // screen : 1920x1080
 
-Spawner::Spawner(sf::RenderTarget* target, int rotation, sf::Vector2f pos)
+Spawner::Spawner(sf::RenderTarget* target, float rotation, sf::Vector2f pos, sf::Vector2f _fbscale)
 {
     clock = new sf::Clock();
 
+    fbScale = _fbscale;
     spawnerPosition = pos;
 
     spawnerShape = new sf::CircleShape(10);
@@ -27,18 +28,19 @@ Spawner::~Spawner()
 }
 
 
-void Spawner::update(sf::Time dt)
+void Spawner::update(sf::Time dt, sf::FloatRect player, float speed, sf::Vector2f scale, float rotation, float _delay)
 {
-    if (clock->getElapsedTime().asSeconds() > this->timeDelay)
+    if (clock->getElapsedTime().asSeconds() > _delay)
     {
-        fireballs.push_back( new Fireball( this->spawnerPosition, 500, {0.3, 0.3}, -90 ));
+        fireballs.push_back( new Fireball( this->spawnerPosition, speed, this->fbScale, rotation ));
         clock->restart();
     }    
 
 
     for (int i=0; i<fireballs.size(); i++)
     {
-        if (fireballs[i]->getPosition().y > 600)
+        if ((fireballs[i]->getPosition().y > SC_HEIGHT) |
+            (checkCollisionPlayer( player )))
         {
             delete fireballs[i];
             fireballs.erase( fireballs.begin()+i );

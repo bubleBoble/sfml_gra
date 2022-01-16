@@ -25,8 +25,16 @@ private:
     void initWindow();
 
     int level;
+
+    int topSpawnerCount {1};
+    int botSpawnerCount {1};
+    int leftSpawnerCount {1};
+    int rightSpawnerCount {1};
+
     int collisions{0};
     int life{100};
+
+    float random_spawner_time_delay {1};
 
     /* Game objects
     **************************/
@@ -53,4 +61,5 @@ public:
 
     void drawCoordinates(sf::RenderTarget& target);
 
+    void initLevelSettings( int level );
 };

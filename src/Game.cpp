@@ -23,14 +23,8 @@ Game::Game()
     /* Test hud */
     hud = new Hud(window);
     
-    float r = 250;
-    for (int i=0; i<1; i++)
-    {
-        topSpawners.push_back( new Spawner(this->window, 0, {r, 0}) );
-        r+=200;
-    }
-
-    topSpawners[0]->setTimeDelay( 1 );
+    srand (time(NULL));
+    initLevelSettings( 0 );
 
 }
 
@@ -71,9 +65,12 @@ void Game::update(sf::Time dt)
     player->updateKeyboard(dt);
     player->update( dt );
     
+    // top spawners
     for (auto& i : topSpawners)
     {
-        i->update( dt );        
+        random_spawner_time_delay = randomRangefloat(2.0f, 5.0f);
+
+        i->update( dt, this->player->getBox(), 500, {0.23f, 0.23f}, -90, random_spawner_time_delay);        
         if ( clockKolizja->getElapsedTime().asSeconds() > 1 )
         {
             if ( i->checkCollisionPlayer( this->player->getBox() ) )
@@ -131,4 +128,68 @@ void Game::drawCoordinates(sf::RenderTarget& target){
 
     target.draw(OxLine);
     target.draw(OyLine);
+}
+
+
+
+void Game::initLevelSettings( int level )
+{
+    /*settings:
+        - # of topSpawner/bot/left/right
+        - speed dla każdego spawnera
+        -ruch dla każdego spawnera?
+    */
+    switch (level)
+    {
+    case 0: 
+    {
+        topSpawnerCount = 3;
+        botSpawnerCount = 2; 
+        leftSpawnerCount = 2;
+        rightSpawnerCount = 1;
+        
+        // top spawners
+        sf::Vector2f ran_pos_top { randomRangefloat(0, SC_WIDTH/topSpawnerCount), 0};
+        for (int i=0; i<topSpawnerCount; i++)
+        {
+            float ran_Scale = randomRangefloat(0.23, 0.5);
+            sf::Vector2f scale_random {ran_Scale, ran_Scale};
+            topSpawners.push_back( new Spawner(this->window, 0, ran_pos_top, scale_random));
+            
+            ran_pos_top.x = (i+1)*(SC_WIDTH-60)/3 + randomRangefloat(0, SC_WIDTH/topSpawnerCount);
+        }
+        
+        // left spawners
+        sf::Vector2f ran_pos_left { randomRangefloat(0, SC_WIDTH/topSpawnerCount), 0};
+        for (int i=0; i<topSpawnerCount; i++)
+        {
+            float ran_Scale = randomRangefloat(0.23, 0.5);
+            sf::Vector2f scale_random {ran_Scale, ran_Scale};
+            topSpawners.push_back( new Spawner(this->window, 0, ran_pos_top, scale_random));
+            
+            ran_pos_top.x = (i+1)*(SC_WIDTH-60)/3 + randomRangefloat(0, SC_WIDTH/topSpawnerCount);
+        }
+        break;    
+    }
+        
+    
+    case 1:
+        topSpawnerCount = 2;
+        botSpawnerCount = 3; 
+        leftSpawnerCount = 3;
+        rightSpawnerCount = 1;
+        break;
+
+    case 2:
+        topSpawnerCount = 3;
+        botSpawnerCount = 1; 
+        leftSpawnerCount = 1;
+        rightSpawnerCount = 3;
+        break;
+
+    default:
+        break;
+    }
+
+
 }

@@ -128,8 +128,8 @@ void Entity::moveEntityCircle(sf::Vector2f pos)
 void Entity::render(sf::RenderTarget& target)
 {
     target.draw(this->sprite);
-    target.draw(this->entityBox);
-    target.draw(this->entityCircle);
+    // target.draw(this->entityBox);
+    // target.draw(this->entityCircle);
 }
 
 // move

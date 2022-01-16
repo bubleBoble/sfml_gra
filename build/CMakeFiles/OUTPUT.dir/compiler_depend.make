@@ -1604,8 +1604,8 @@ CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: ../src/Spawner.cpp \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
   C:/MinGW/include/math.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
-  ../include/FireBall.h \
   ../include/Entity.h \
+  ../include/FireBall.h \
   ../include/FireballAnimation.h
 
 CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj: ../src/animation2xxx.cpp \

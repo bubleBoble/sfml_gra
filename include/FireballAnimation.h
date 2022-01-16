@@ -25,7 +25,7 @@ public:
         s.setTexture(frames[iFrame]);
     }
     void update(float dt, float playerSpeed) {
-        holdTime = 8/50.f;
+        holdTime = 3/50.f;
         time += dt;
         while (time >= holdTime) {
             time -= holdTime;
