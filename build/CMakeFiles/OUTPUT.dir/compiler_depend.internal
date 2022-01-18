@@ -1607,11 +1607,13 @@ CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj
  C:/Program Files (x86)/SFML/include/SFML/Graphics/Text.hpp
  C:/Program Files (x86)/SFML/include/SFML/Graphics/VertexBuffer.hpp
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdlib.h
- C:/zcPg/004_gra_na_infe/include/config.h
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath
  C:/MinGW/include/math.h
- C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream
+ C:/zcPg/004_gra_na_infe/include/config.h
+ C:/zcPg/004_gra_na_infe/include/Player.h
  C:/zcPg/004_gra_na_infe/include/Entity.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream
+ C:/zcPg/004_gra_na_infe/include/animation2xxx.h
  C:/zcPg/004_gra_na_infe/include/FireBall.h
  C:/zcPg/004_gra_na_infe/include/FireballAnimation.h
 

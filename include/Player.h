@@ -15,6 +15,8 @@ public:
 
     void update( sf::Time dt );
 
+    int life {100};
+
 private:
     Animation rightWalk, leftWalk, upWalk, downWalk;
     sf::Texture frontTex;

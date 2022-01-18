@@ -1600,11 +1600,13 @@ CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: ../src/Spawner.cpp \
   C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/Text.hpp \
   C:/Program\ Files\ (x86)/SFML/include/SFML/Graphics/VertexBuffer.hpp \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdlib.h \
-  ../include/config.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
   C:/MinGW/include/math.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
+  ../include/config.h \
+  ../include/Player.h \
   ../include/Entity.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
+  ../include/animation2xxx.h \
   ../include/FireBall.h \
   ../include/FireballAnimation.h
 

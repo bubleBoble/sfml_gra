@@ -26,13 +26,13 @@ private:
 
     int level;
 
-    int topSpawnerCount {1};
-    int botSpawnerCount {1};
-    int leftSpawnerCount {1};
-    int rightSpawnerCount {1};
+    float randomScale;
+    float randomSpeed;
+    float randomDelay;
+
+    float randomFireballspeed;
 
     int collisions{0};
-    int life{100};
 
     float random_spawner_time_delay {1};
 
@@ -42,10 +42,8 @@ private:
     Hud* hud;
 
     Spawner* spawner;
-    std::vector<Spawner*> topSpawners;
-    std::vector<Spawner*> botSpawners;
-    std::vector<Spawner*> leftSpawners;
-    std::vector<Spawner*> rightSpawners;
+
+    std::vector <Spawner*> levelSpawners;
 
     /* Game objects methods
     **************************/
@@ -53,6 +51,9 @@ private:
 public:
     Game();
     ~Game();
+
+    int life{100};
+
 
     void run();                 // Main game loop
     void update(sf::Time dt);   

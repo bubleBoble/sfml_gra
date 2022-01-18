@@ -24,8 +24,10 @@ Game::Game()
     hud = new Hud(window);
     
     srand (time(NULL));
-    initLevelSettings( 0 );
+    // initLevelSettings( 0 );
 
+    level = 0;
+    // initLevelSettings(level);
 }
 
 Game::~Game()
@@ -37,10 +39,12 @@ Game::~Game()
     delete this->player;
     delete this->hud;
 
-    for (auto& i : topSpawners)
-    {
-        delete i;
-    }
+    // delete spawner
+
+    // for (auto& i : levelSpawners)
+    // {
+    //     delete i;
+    // }
 }
 
 void Game::run() 
@@ -65,24 +69,14 @@ void Game::update(sf::Time dt)
     player->updateKeyboard(dt);
     player->update( dt );
     
-    // top spawners
-    for (auto& i : topSpawners)
-    {
-        random_spawner_time_delay = randomRangefloat(2.0f, 5.0f);
+ 
+    // for (auto& i : levelSpawners)
+    // {
+    //     randomFireballspeed = randomRangefloat(500, 1500);
+    //     i->update(dt, *this->player, randomFireballspeed, {0.23, 0.23}, 0, 1.5);
+    // }
 
-        i->update( dt, this->player->getBox(), 500, {0.23f, 0.23f}, -90, random_spawner_time_delay);        
-        if ( clockKolizja->getElapsedTime().asSeconds() > 1 )
-        {
-            if ( i->checkCollisionPlayer( this->player->getBox() ) )
-            {
-                this->collisions += 1;
-                this->life -= 1;
-                clockKolizja->restart();
-            }
-        }
-    }
-
-    this->hud->update( this->collisions, this->life );
+    this->hud->update( this->collisions, player->life );
 }
 
 void Game::render()
@@ -95,11 +89,11 @@ void Game::render()
     //  Drawing game objects
     player->render(*this->window); 
 
+    // for (auto& i : levelSpawners)
+    // {
+    //     i->render(*this->window);
+    // }
 
-    for (auto& i : topSpawners)
-    {
-        i->render(*this->window);
-    }
 
     hud->render(this->window);
 
@@ -132,64 +126,63 @@ void Game::drawCoordinates(sf::RenderTarget& target){
 
 
 
-void Game::initLevelSettings( int level )
-{
-    /*settings:
-        - # of topSpawner/bot/left/right
-        - speed dla każdego spawnera
-        -ruch dla każdego spawnera?
-    */
-    switch (level)
-    {
-    case 0: 
-    {
-        topSpawnerCount = 3;
-        botSpawnerCount = 2; 
-        leftSpawnerCount = 2;
-        rightSpawnerCount = 1;
-        
-        // top spawners
-        sf::Vector2f ran_pos_top { randomRangefloat(0, SC_WIDTH/topSpawnerCount), 0};
-        for (int i=0; i<topSpawnerCount; i++)
-        {
-            float ran_Scale = randomRangefloat(0.23, 0.5);
-            sf::Vector2f scale_random {ran_Scale, ran_Scale};
-            topSpawners.push_back( new Spawner(this->window, 0, ran_pos_top, scale_random));
-            
-            ran_pos_top.x = (i+1)*(SC_WIDTH-60)/3 + randomRangefloat(0, SC_WIDTH/topSpawnerCount);
-        }
-        
-        // left spawners
-        sf::Vector2f ran_pos_left { randomRangefloat(0, SC_WIDTH/topSpawnerCount), 0};
-        for (int i=0; i<topSpawnerCount; i++)
-        {
-            float ran_Scale = randomRangefloat(0.23, 0.5);
-            sf::Vector2f scale_random {ran_Scale, ran_Scale};
-            topSpawners.push_back( new Spawner(this->window, 0, ran_pos_top, scale_random));
-            
-            ran_pos_top.x = (i+1)*(SC_WIDTH-60)/3 + randomRangefloat(0, SC_WIDTH/topSpawnerCount);
-        }
-        break;    
-    }
-        
+// void Game::initLevelSettings( int level )
+// {
+//     /*settings:
+//         - # of topSpawner/bot/left/right
+//         - speed dla każdego spawnera
+//     */
+//     srand(time(NULL));
+
+//     switch (level)
+//     {
+//     case 0: 
+//     {
+//         randomScale = randomRangefloat(0.7f, 1.5f);
+//         randomSpeed = randomRangefloat(400.f, 1000.f);
+//         randomDelay = randomRangefloat(0.8f, 2.0f);
+
+//         levelSpawners.push_back( new Spawner( this->window, -90, {0,0}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+//         break;    
+//     }
     
-    case 1:
-        topSpawnerCount = 2;
-        botSpawnerCount = 3; 
-        leftSpawnerCount = 3;
-        rightSpawnerCount = 1;
-        break;
+//     case 1:
+//     {
+//         // góra
+//         randomScale = randomRangefloat(0.7f, 1.5f);
+//         randomSpeed = randomRangefloat(400.f, 1000.f);
+//         randomDelay = randomRangefloat(1.2f, 2.0f);
+//         levelSpawners.push_back( new Spawner( this->window, -90, {0, 0}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+//         // dół
+//         randomScale = randomRangefloat(0.23f, 1.5f);
+//         randomSpeed = randomRangefloat(400.f, 1000.f);
+//         randomDelay = randomRangefloat(1.2f, 2.0f);
+//         levelSpawners.push_back( new Spawner( this->window, 90, {0, SC_HEIGHT-50.0f}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+//         break;
+//     }
 
-    case 2:
-        topSpawnerCount = 3;
-        botSpawnerCount = 1; 
-        leftSpawnerCount = 1;
-        rightSpawnerCount = 3;
-        break;
+//     case 2:
+//         // góra
+//         randomScale = randomRangefloat(2.0f, 3.5f);
+//         randomSpeed = randomRangefloat(400.f, 1000.f);
+//         randomDelay = randomRangefloat(3.0f, 4.0f);
+//         levelSpawners.push_back( new Spawner( this->window, -90, {0, 0}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+//         // dół
+//         randomScale = randomRangefloat(2.0f, 2.5f);
+//         randomSpeed = randomRangefloat(400.f, 1000.f);
+//         randomDelay = randomRangefloat(3.0f, 4.0f);
+//         levelSpawners.push_back( new Spawner( this->window, 90, {0, SC_HEIGHT-50.0f}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+//         //dół 2
+//         randomScale = randomRangefloat(2.0f, 4.0f);
+//         randomSpeed = randomRangefloat(600.f, 1000.f);
+//         randomDelay = randomRangefloat(3.0f, 6.0f);
+//         levelSpawners.push_back( new Spawner( this->window, 90, {0, SC_HEIGHT-50.0f}, {randomScale, randomScale}, randomSpeed, randomDelay ) );
+        
+//         break;
 
-    default:
-        break;
-    }
+//     default:
+//         break;
+//     }
 
 
-}
+// }
