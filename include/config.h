@@ -1,13 +1,14 @@
 #pragma once
 #include <cmath>
+#include <iostream>
 
 #define RESOURCE_PATH "../content/"     // Path relative to .exe file (bin foler)
 
-#define SC_WIDTH sf::VideoMode::getDesktopMode().width
-#define SC_HEIGHT sf::VideoMode::getDesktopMode().height
+// #define SC_WIDTH sf::VideoMode::getDesktopMode().width
+// #define SC_HEIGHT sf::VideoMode::getDesktopMode().height
 
-// #define SC_WIDTH 800
-// #define SC_HEIGHT 700
+#define SC_WIDTH 1000
+#define SC_HEIGHT 800
 
 
 #define WINDOW_WIDTH 1450.0f

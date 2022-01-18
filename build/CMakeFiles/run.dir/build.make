@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\zcPg\004_gra_na_infe
+CMAKE_SOURCE_DIR = C:\zcPg\007_gra_na_infe_N03Copy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\zcPg\004_gra_na_infe\build
+CMAKE_BINARY_DIR = C:\zcPg\007_gra_na_infe_N03Copy\build
 
 # Utility rule file for run.
 
@@ -81,6 +81,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\zcPg\004_gra_na_infe C:\zcPg\004_gra_na_infe C:\zcPg\004_gra_na_infe\build C:\zcPg\004_gra_na_infe\build C:\zcPg\004_gra_na_infe\build\CMakeFiles\run.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\zcPg\007_gra_na_infe_N03Copy C:\zcPg\007_gra_na_infe_N03Copy C:\zcPg\007_gra_na_infe_N03Copy\build C:\zcPg\007_gra_na_infe_N03Copy\build C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles\run.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run.dir/depend
 

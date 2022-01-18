@@ -8,15 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/zcPg/004_gra_na_infe/src/Entity.cpp" "CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/FireBall.cpp" "CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/FireballAnimation.cpp" "CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/Game.cpp" "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/Hud.cpp" "CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/Player.cpp" "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/Spawner.cpp" "CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/animation2xxx.cpp" "CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj.d"
-  "C:/zcPg/004_gra_na_infe/src/main.cpp" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Animation.cpp" "CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Bullet.cpp" "CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Enemy.cpp" "CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Game.cpp" "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Highscores.cpp" "CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Mainmenu.cpp" "CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/Player.cpp" "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/StartScreen.cpp" "CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/hud.cpp" "CMakeFiles/OUTPUT.dir/src/hud.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/hud.cpp.obj.d"
+  "C:/zcPg/007_gra_na_infe_N03Copy/src/main.cpp" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj" "gcc" "CMakeFiles/OUTPUT.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

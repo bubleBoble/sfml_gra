@@ -1,20 +1,13 @@
 CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: \
- C:\zcPg\004_gra_na_infe\src\Animation.cpp \
- C:/zcPg/004_gra_na_infe/include/Animation.h \
- C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
- C:/PROGRA~2/SFML/include/SFML/Window.hpp \
- C:/PROGRA~2/SFML/include/SFML/System.hpp \
- C:/PROGRA~2/SFML/include/SFML/Config.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
- C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
+ C:\zcPg\007_gra_na_infe_N03Copy\src\Animation.cpp \
+ C:/zcPg/007_gra_na_infe_N03Copy/include/Animation.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
@@ -106,6 +99,16 @@ CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
+ C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Window.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System.hpp \
+ C:/PROGRA~2/SFML/include/SFML/Config.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Clock.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Export.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Time.hpp \
+ C:/PROGRA~2/SFML/include/SFML/System/Err.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/FileInputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/InputStream.hpp \
  C:/PROGRA~2/SFML/include/SFML/System/NonCopyable.hpp \
@@ -142,8 +145,6 @@ CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
  C:/PROGRA~2/SFML/include/SFML/System/Utf.inl \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iterator \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stream_iterator.h \
  C:/PROGRA~2/SFML/include/SFML/System/String.inl \
  C:/PROGRA~2/SFML/include/SFML/System/Thread.hpp \
@@ -211,5 +212,6 @@ CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/zcPg/004_gra_na_infe/include/config.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h \
+ C:/zcPg/007_gra_na_infe_N03Copy/include/config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h

@@ -1,24 +1,34 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <string>
+#include <sstream>
 
-#include "config.h"
-#include "Entity.h"
-// #include "Animation.h"
-#include "animation2xxx.h"
+#include "Animation.h"
 
-class Player : public Entity{
-public:
-    // Constructor
-    Player( const sf::Vector2f pos, float speed, sf::Vector2f scale );
-    void updateKeyboard(sf::Time dt);
-
-    void update( sf::Time dt );
-
-    int life {100};
-
+class Player 
+{
 private:
+    sf::RectangleShape shape;
+    sf::Vector2f playerPosCenter;
+    sf::Sprite sprite;
+    sf::Texture texture;
+
     Animation rightWalk, leftWalk, upWalk, downWalk;
-    sf::Texture frontTex;
-    sf::Vector2f dir { 0.0f, 0.0f };
+
+    float speed;
+
+    sf::Vector2f dir;
+
+    int health;
+
+public:
+    std::string name;
+
+    Player( int _health );
+    ~Player(); 
+
+    void move( sf::Vector2f* dir, sf::Time* dt );
+    void update( sf::Time* dt );
+    void render( sf::RenderTarget* target );
+
+    sf::Vector2f getPosCenter();
 };

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\zcPg\004_gra_na_infe
+CMAKE_SOURCE_DIR = C:\zcPg\007_gra_na_infe_N03Copy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\zcPg\004_gra_na_infe\build
+CMAKE_BINARY_DIR = C:\zcPg\007_gra_na_infe_N03Copy\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/zcPg/004_gra_na_infe/build/CPackSourceConfig.cmake
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/zcPg/007_gra_na_infe_N03Copy/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -106,9 +106,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\zcPg\004_gra_na_infe\build\CMakeFiles C:\zcPg\004_gra_na_infe\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles C:\zcPg\007_gra_na_infe_N03Copy\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\zcPg\004_gra_na_infe\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,77 +161,77 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run.dir\build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-src/Entity.obj: src/Entity.cpp.obj
-.PHONY : src/Entity.obj
+src/Animation.obj: src/Animation.cpp.obj
+.PHONY : src/Animation.obj
 
 # target to build an object file
-src/Entity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj
-.PHONY : src/Entity.cpp.obj
+src/Animation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj
+.PHONY : src/Animation.cpp.obj
 
-src/Entity.i: src/Entity.cpp.i
-.PHONY : src/Entity.i
+src/Animation.i: src/Animation.cpp.i
+.PHONY : src/Animation.i
 
 # target to preprocess a source file
-src/Entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.i
-.PHONY : src/Entity.cpp.i
+src/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Animation.cpp.i
+.PHONY : src/Animation.cpp.i
 
-src/Entity.s: src/Entity.cpp.s
-.PHONY : src/Entity.s
+src/Animation.s: src/Animation.cpp.s
+.PHONY : src/Animation.s
 
 # target to generate assembly for a file
-src/Entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Entity.cpp.s
-.PHONY : src/Entity.cpp.s
+src/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Animation.cpp.s
+.PHONY : src/Animation.cpp.s
 
-src/FireBall.obj: src/FireBall.cpp.obj
-.PHONY : src/FireBall.obj
+src/Bullet.obj: src/Bullet.cpp.obj
+.PHONY : src/Bullet.obj
 
 # target to build an object file
-src/FireBall.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj
-.PHONY : src/FireBall.cpp.obj
+src/Bullet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj
+.PHONY : src/Bullet.cpp.obj
 
-src/FireBall.i: src/FireBall.cpp.i
-.PHONY : src/FireBall.i
+src/Bullet.i: src/Bullet.cpp.i
+.PHONY : src/Bullet.i
 
 # target to preprocess a source file
-src/FireBall.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.i
-.PHONY : src/FireBall.cpp.i
+src/Bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Bullet.cpp.i
+.PHONY : src/Bullet.cpp.i
 
-src/FireBall.s: src/FireBall.cpp.s
-.PHONY : src/FireBall.s
+src/Bullet.s: src/Bullet.cpp.s
+.PHONY : src/Bullet.s
 
 # target to generate assembly for a file
-src/FireBall.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireBall.cpp.s
-.PHONY : src/FireBall.cpp.s
+src/Bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Bullet.cpp.s
+.PHONY : src/Bullet.cpp.s
 
-src/FireballAnimation.obj: src/FireballAnimation.cpp.obj
-.PHONY : src/FireballAnimation.obj
+src/Enemy.obj: src/Enemy.cpp.obj
+.PHONY : src/Enemy.obj
 
 # target to build an object file
-src/FireballAnimation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj
-.PHONY : src/FireballAnimation.cpp.obj
+src/Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj
+.PHONY : src/Enemy.cpp.obj
 
-src/FireballAnimation.i: src/FireballAnimation.cpp.i
-.PHONY : src/FireballAnimation.i
+src/Enemy.i: src/Enemy.cpp.i
+.PHONY : src/Enemy.i
 
 # target to preprocess a source file
-src/FireballAnimation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.i
-.PHONY : src/FireballAnimation.cpp.i
+src/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
 
-src/FireballAnimation.s: src/FireballAnimation.cpp.s
-.PHONY : src/FireballAnimation.s
+src/Enemy.s: src/Enemy.cpp.s
+.PHONY : src/Enemy.s
 
 # target to generate assembly for a file
-src/FireballAnimation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.s
-.PHONY : src/FireballAnimation.cpp.s
+src/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
 
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
@@ -257,29 +257,53 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
-src/Hud.obj: src/Hud.cpp.obj
-.PHONY : src/Hud.obj
+src/Highscores.obj: src/Highscores.cpp.obj
+.PHONY : src/Highscores.obj
 
 # target to build an object file
-src/Hud.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj
-.PHONY : src/Hud.cpp.obj
+src/Highscores.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj
+.PHONY : src/Highscores.cpp.obj
 
-src/Hud.i: src/Hud.cpp.i
-.PHONY : src/Hud.i
+src/Highscores.i: src/Highscores.cpp.i
+.PHONY : src/Highscores.i
 
 # target to preprocess a source file
-src/Hud.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.i
-.PHONY : src/Hud.cpp.i
+src/Highscores.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Highscores.cpp.i
+.PHONY : src/Highscores.cpp.i
 
-src/Hud.s: src/Hud.cpp.s
-.PHONY : src/Hud.s
+src/Highscores.s: src/Highscores.cpp.s
+.PHONY : src/Highscores.s
 
 # target to generate assembly for a file
-src/Hud.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Hud.cpp.s
-.PHONY : src/Hud.cpp.s
+src/Highscores.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Highscores.cpp.s
+.PHONY : src/Highscores.cpp.s
+
+src/Mainmenu.obj: src/Mainmenu.cpp.obj
+.PHONY : src/Mainmenu.obj
+
+# target to build an object file
+src/Mainmenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj
+.PHONY : src/Mainmenu.cpp.obj
+
+src/Mainmenu.i: src/Mainmenu.cpp.i
+.PHONY : src/Mainmenu.i
+
+# target to preprocess a source file
+src/Mainmenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.i
+.PHONY : src/Mainmenu.cpp.i
+
+src/Mainmenu.s: src/Mainmenu.cpp.s
+.PHONY : src/Mainmenu.s
+
+# target to generate assembly for a file
+src/Mainmenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.s
+.PHONY : src/Mainmenu.cpp.s
 
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
@@ -305,53 +329,53 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
-src/Spawner.obj: src/Spawner.cpp.obj
-.PHONY : src/Spawner.obj
+src/StartScreen.obj: src/StartScreen.cpp.obj
+.PHONY : src/StartScreen.obj
 
 # target to build an object file
-src/Spawner.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj
-.PHONY : src/Spawner.cpp.obj
+src/StartScreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj
+.PHONY : src/StartScreen.cpp.obj
 
-src/Spawner.i: src/Spawner.cpp.i
-.PHONY : src/Spawner.i
+src/StartScreen.i: src/StartScreen.cpp.i
+.PHONY : src/StartScreen.i
 
 # target to preprocess a source file
-src/Spawner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.i
-.PHONY : src/Spawner.cpp.i
+src/StartScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.i
+.PHONY : src/StartScreen.cpp.i
 
-src/Spawner.s: src/Spawner.cpp.s
-.PHONY : src/Spawner.s
+src/StartScreen.s: src/StartScreen.cpp.s
+.PHONY : src/StartScreen.s
 
 # target to generate assembly for a file
-src/Spawner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/Spawner.cpp.s
-.PHONY : src/Spawner.cpp.s
+src/StartScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.s
+.PHONY : src/StartScreen.cpp.s
 
-src/animation2xxx.obj: src/animation2xxx.cpp.obj
-.PHONY : src/animation2xxx.obj
+src/hud.obj: src/hud.cpp.obj
+.PHONY : src/hud.obj
 
 # target to build an object file
-src/animation2xxx.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj
-.PHONY : src/animation2xxx.cpp.obj
+src/hud.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/hud.cpp.obj
+.PHONY : src/hud.cpp.obj
 
-src/animation2xxx.i: src/animation2xxx.cpp.i
-.PHONY : src/animation2xxx.i
+src/hud.i: src/hud.cpp.i
+.PHONY : src/hud.i
 
 # target to preprocess a source file
-src/animation2xxx.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.i
-.PHONY : src/animation2xxx.cpp.i
+src/hud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/hud.cpp.i
+.PHONY : src/hud.cpp.i
 
-src/animation2xxx.s: src/animation2xxx.cpp.s
-.PHONY : src/animation2xxx.s
+src/hud.s: src/hud.cpp.s
+.PHONY : src/hud.s
 
 # target to generate assembly for a file
-src/animation2xxx.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.s
-.PHONY : src/animation2xxx.cpp.s
+src/hud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OUTPUT.dir\build.make CMakeFiles/OUTPUT.dir/src/hud.cpp.s
+.PHONY : src/hud.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -389,30 +413,33 @@ help:
 	@echo ... rebuild_cache
 	@echo ... run
 	@echo ... OUTPUT
-	@echo ... src/Entity.obj
-	@echo ... src/Entity.i
-	@echo ... src/Entity.s
-	@echo ... src/FireBall.obj
-	@echo ... src/FireBall.i
-	@echo ... src/FireBall.s
-	@echo ... src/FireballAnimation.obj
-	@echo ... src/FireballAnimation.i
-	@echo ... src/FireballAnimation.s
+	@echo ... src/Animation.obj
+	@echo ... src/Animation.i
+	@echo ... src/Animation.s
+	@echo ... src/Bullet.obj
+	@echo ... src/Bullet.i
+	@echo ... src/Bullet.s
+	@echo ... src/Enemy.obj
+	@echo ... src/Enemy.i
+	@echo ... src/Enemy.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
-	@echo ... src/Hud.obj
-	@echo ... src/Hud.i
-	@echo ... src/Hud.s
+	@echo ... src/Highscores.obj
+	@echo ... src/Highscores.i
+	@echo ... src/Highscores.s
+	@echo ... src/Mainmenu.obj
+	@echo ... src/Mainmenu.i
+	@echo ... src/Mainmenu.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
-	@echo ... src/Spawner.obj
-	@echo ... src/Spawner.i
-	@echo ... src/Spawner.s
-	@echo ... src/animation2xxx.obj
-	@echo ... src/animation2xxx.i
-	@echo ... src/animation2xxx.s
+	@echo ... src/StartScreen.obj
+	@echo ... src/StartScreen.i
+	@echo ... src/StartScreen.s
+	@echo ... src/hud.obj
+	@echo ... src/hud.i
+	@echo ... src/hud.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\zcPg\004_gra_na_infe
+CMAKE_SOURCE_DIR = C:\zcPg\007_gra_na_infe_N03Copy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\zcPg\004_gra_na_infe\build
+CMAKE_BINARY_DIR = C:\zcPg\007_gra_na_infe_N03Copy\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OUTPUT.dir/depend.make
@@ -72,161 +72,178 @@ CMakeFiles/OUTPUT.dir/src/main.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
 CMakeFiles/OUTPUT.dir/src/main.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
 CMakeFiles/OUTPUT.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/OUTPUT.dir/src/main.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OUTPUT.dir/src/main.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/main.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\main.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\main.cpp.obj -c C:\zcPg\004_gra_na_infe\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OUTPUT.dir/src/main.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/main.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\main.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\main.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\main.cpp
 
 CMakeFiles/OUTPUT.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/main.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\main.cpp > CMakeFiles\OUTPUT.dir\src\main.cpp.i
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\main.cpp > CMakeFiles\OUTPUT.dir\src\main.cpp.i
 
 CMakeFiles/OUTPUT.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/main.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\main.cpp -o CMakeFiles\OUTPUT.dir\src\main.cpp.s
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\main.cpp -o CMakeFiles\OUTPUT.dir\src\main.cpp.s
 
 CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
 CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
 CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: ../src/Game.cpp
 CMakeFiles/OUTPUT.dir/src/Game.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OUTPUT.dir/src/Game.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Game.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Game.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Game.cpp.obj -c C:\zcPg\004_gra_na_infe\src\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OUTPUT.dir/src/Game.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Game.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Game.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Game.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Game.cpp
 
 CMakeFiles/OUTPUT.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Game.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\Game.cpp > CMakeFiles\OUTPUT.dir\src\Game.cpp.i
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Game.cpp > CMakeFiles\OUTPUT.dir\src\Game.cpp.i
 
 CMakeFiles/OUTPUT.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Game.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\Game.cpp -o CMakeFiles\OUTPUT.dir\src\Game.cpp.s
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Game.cpp -o CMakeFiles\OUTPUT.dir\src\Game.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj: ../src/Entity.cpp
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Entity.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Entity.cpp.obj -c C:\zcPg\004_gra_na_infe\src\Entity.cpp
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj: ../src/Enemy.cpp
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Enemy.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Enemy.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Enemy.cpp
 
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Entity.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\Entity.cpp > CMakeFiles\OUTPUT.dir\src\Entity.cpp.i
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Enemy.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Enemy.cpp > CMakeFiles\OUTPUT.dir\src\Enemy.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/Entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Entity.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\Entity.cpp -o CMakeFiles\OUTPUT.dir\src\Entity.cpp.s
+CMakeFiles/OUTPUT.dir/src/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Enemy.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Enemy.cpp -o CMakeFiles\OUTPUT.dir\src\Enemy.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj: ../src/Hud.cpp
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Hud.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Hud.cpp.obj -c C:\zcPg\004_gra_na_infe\src\Hud.cpp
+CMakeFiles/OUTPUT.dir/src/hud.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/hud.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/hud.cpp.obj: ../src/hud.cpp
+CMakeFiles/OUTPUT.dir/src/hud.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OUTPUT.dir/src/hud.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/hud.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\hud.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\hud.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\hud.cpp
 
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Hud.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\Hud.cpp > CMakeFiles\OUTPUT.dir\src\Hud.cpp.i
+CMakeFiles/OUTPUT.dir/src/hud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/hud.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\hud.cpp > CMakeFiles\OUTPUT.dir\src\hud.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/Hud.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Hud.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\Hud.cpp -o CMakeFiles\OUTPUT.dir\src\Hud.cpp.s
+CMakeFiles/OUTPUT.dir/src/hud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/hud.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\hud.cpp -o CMakeFiles\OUTPUT.dir\src\hud.cpp.s
 
 CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
 CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
 CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: ../src/Player.cpp
 CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OUTPUT.dir/src/Player.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Player.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Player.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Player.cpp.obj -c C:\zcPg\004_gra_na_infe\src\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OUTPUT.dir/src/Player.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Player.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Player.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Player.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Player.cpp
 
 CMakeFiles/OUTPUT.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Player.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\Player.cpp > CMakeFiles\OUTPUT.dir\src\Player.cpp.i
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Player.cpp > CMakeFiles\OUTPUT.dir\src\Player.cpp.i
 
 CMakeFiles/OUTPUT.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Player.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\Player.cpp -o CMakeFiles\OUTPUT.dir\src\Player.cpp.s
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Player.cpp -o CMakeFiles\OUTPUT.dir\src\Player.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj: ../src/animation2xxx.cpp
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\animation2xxx.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\animation2xxx.cpp.obj -c C:\zcPg\004_gra_na_infe\src\animation2xxx.cpp
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: ../src/Animation.cpp
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Animation.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Animation.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Animation.cpp
 
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\animation2xxx.cpp > CMakeFiles\OUTPUT.dir\src\animation2xxx.cpp.i
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Animation.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Animation.cpp > CMakeFiles\OUTPUT.dir\src\Animation.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\animation2xxx.cpp -o CMakeFiles\OUTPUT.dir\src\animation2xxx.cpp.s
+CMakeFiles/OUTPUT.dir/src/Animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Animation.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Animation.cpp -o CMakeFiles\OUTPUT.dir\src\Animation.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj: ../src/FireBall.cpp
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\FireBall.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\FireBall.cpp.obj -c C:\zcPg\004_gra_na_infe\src\FireBall.cpp
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj: ../src/Bullet.cpp
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Bullet.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Bullet.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Bullet.cpp
 
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/FireBall.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\FireBall.cpp > CMakeFiles\OUTPUT.dir\src\FireBall.cpp.i
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Bullet.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Bullet.cpp > CMakeFiles\OUTPUT.dir\src\Bullet.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/FireBall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/FireBall.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\FireBall.cpp -o CMakeFiles\OUTPUT.dir\src\FireBall.cpp.s
+CMakeFiles/OUTPUT.dir/src/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Bullet.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Bullet.cpp -o CMakeFiles\OUTPUT.dir\src\Bullet.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj: ../src/FireballAnimation.cpp
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\FireballAnimation.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\FireballAnimation.cpp.obj -c C:\zcPg\004_gra_na_infe\src\FireballAnimation.cpp
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj: ../src/Mainmenu.cpp
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Mainmenu.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Mainmenu.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Mainmenu.cpp
 
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\FireballAnimation.cpp > CMakeFiles\OUTPUT.dir\src\FireballAnimation.cpp.i
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Mainmenu.cpp > CMakeFiles\OUTPUT.dir\src\Mainmenu.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\FireballAnimation.cpp -o CMakeFiles\OUTPUT.dir\src\FireballAnimation.cpp.s
+CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Mainmenu.cpp -o CMakeFiles\OUTPUT.dir\src\Mainmenu.cpp.s
 
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: ../src/Spawner.cpp
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Spawner.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Spawner.cpp.obj -c C:\zcPg\004_gra_na_infe\src\Spawner.cpp
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj: ../src/StartScreen.cpp
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\StartScreen.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\StartScreen.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\StartScreen.cpp
 
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Spawner.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\004_gra_na_infe\src\Spawner.cpp > CMakeFiles\OUTPUT.dir\src\Spawner.cpp.i
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\StartScreen.cpp > CMakeFiles\OUTPUT.dir\src\StartScreen.cpp.i
 
-CMakeFiles/OUTPUT.dir/src/Spawner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Spawner.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\004_gra_na_infe\src\Spawner.cpp -o CMakeFiles\OUTPUT.dir\src\Spawner.cpp.s
+CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\StartScreen.cpp -o CMakeFiles\OUTPUT.dir\src\StartScreen.cpp.s
+
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj: CMakeFiles/OUTPUT.dir/flags.make
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj: CMakeFiles/OUTPUT.dir/includes_CXX.rsp
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj: ../src/Highscores.cpp
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj: CMakeFiles/OUTPUT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj -MF CMakeFiles\OUTPUT.dir\src\Highscores.cpp.obj.d -o CMakeFiles\OUTPUT.dir\src\Highscores.cpp.obj -c C:\zcPg\007_gra_na_infe_N03Copy\src\Highscores.cpp
+
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OUTPUT.dir/src/Highscores.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\zcPg\007_gra_na_infe_N03Copy\src\Highscores.cpp > CMakeFiles\OUTPUT.dir\src\Highscores.cpp.i
+
+CMakeFiles/OUTPUT.dir/src/Highscores.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OUTPUT.dir/src/Highscores.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\zcPg\007_gra_na_infe_N03Copy\src\Highscores.cpp -o CMakeFiles\OUTPUT.dir\src\Highscores.cpp.s
 
 # Object files for target OUTPUT
 OUTPUT_OBJECTS = \
 "CMakeFiles/OUTPUT.dir/src/main.cpp.obj" \
 "CMakeFiles/OUTPUT.dir/src/Game.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/hud.cpp.obj" \
 "CMakeFiles/OUTPUT.dir/src/Player.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj" \
-"CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj"
+"CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj" \
+"CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj"
 
 # External object files for target OUTPUT
 OUTPUT_EXTERNAL_OBJECTS =
 
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/main.cpp.obj
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Game.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Entity.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Hud.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Enemy.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/hud.cpp.obj
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Player.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/animation2xxx.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/FireBall.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/FireballAnimation.cpp.obj
-../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Spawner.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Animation.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Bullet.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Mainmenu.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/StartScreen.cpp.obj
+../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/src/Highscores.cpp.obj
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/build.make
 ../bin/OUTPUT.exe: C:/Program\ Files\ (x86)/SFML/lib/libsfml-graphics.a
 ../bin/OUTPUT.exe: C:/Program\ Files\ (x86)/SFML/lib/libsfml-audio.a
@@ -235,7 +252,7 @@ OUTPUT_EXTERNAL_OBJECTS =
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/linklibs.rsp
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/objects1.rsp
 ../bin/OUTPUT.exe: CMakeFiles/OUTPUT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\zcPg\004_gra_na_infe\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ..\bin\OUTPUT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ..\bin\OUTPUT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OUTPUT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -247,6 +264,6 @@ CMakeFiles/OUTPUT.dir/clean:
 .PHONY : CMakeFiles/OUTPUT.dir/clean
 
 CMakeFiles/OUTPUT.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\zcPg\004_gra_na_infe C:\zcPg\004_gra_na_infe C:\zcPg\004_gra_na_infe\build C:\zcPg\004_gra_na_infe\build C:\zcPg\004_gra_na_infe\build\CMakeFiles\OUTPUT.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\zcPg\007_gra_na_infe_N03Copy C:\zcPg\007_gra_na_infe_N03Copy C:\zcPg\007_gra_na_infe_N03Copy\build C:\zcPg\007_gra_na_infe_N03Copy\build C:\zcPg\007_gra_na_infe_N03Copy\build\CMakeFiles\OUTPUT.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/OUTPUT.dir/depend
 

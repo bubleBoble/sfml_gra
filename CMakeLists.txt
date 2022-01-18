@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(001_abc_ct VERSION 0.1.0)
+project(grainf_copy VERSION 0.1.0)
 
 
 
@@ -11,13 +11,18 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 add_executable(OUTPUT
     ${CMAKE_SOURCE_DIR}/src/main.cpp
     ${CMAKE_SOURCE_DIR}/src/Game.cpp
-    ${CMAKE_SOURCE_DIR}/src/Entity.cpp
+    ${CMAKE_SOURCE_DIR}/src/Enemy.cpp
     ${CMAKE_SOURCE_DIR}/src/Hud.cpp
     ${CMAKE_SOURCE_DIR}/src/Player.cpp
-    ${CMAKE_SOURCE_DIR}/src/animation2xxx.cpp
-    ${CMAKE_SOURCE_DIR}/src/Fireball.cpp
-    ${CMAKE_SOURCE_DIR}/src/FireballAnimation.cpp
-    ${CMAKE_SOURCE_DIR}/src/Spawner.cpp
+    ${CMAKE_SOURCE_DIR}/src/Animation.cpp
+    ${CMAKE_SOURCE_DIR}/src/Bullet.cpp
+    ${CMAKE_SOURCE_DIR}/src/Mainmenu.cpp
+    ${CMAKE_SOURCE_DIR}/src/Startscreen.cpp
+    ${CMAKE_SOURCE_DIR}/src/Highscores.cpp
+
+    # ${CMAKE_SOURCE_DIR}/src/Fireball.cpp
+    # ${CMAKE_SOURCE_DIR}/src/FireballAnimation.cpp
+    # ${CMAKE_SOURCE_DIR}/src/Spawner.cpp
 )
 
 

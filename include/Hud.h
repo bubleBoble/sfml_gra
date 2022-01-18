@@ -1,24 +1,19 @@
-#pragma once
 #include <SFML/Graphics.hpp>
-#include <string>
+#include <sstream>
+
 #include "config.h"
 
-
-class Hud
+class Hud 
 {
-protected:
-    sf::Text* lTop;
-    sf::Text* rTop;
-    sf::Font font;
-
-    sf::Vector2u bounds;
-    sf::Vector2f margins;
-
-    void initHud( sf::Vector2u _bounds );
 public:
-    Hud( sf::RenderTarget* target );
-    ~Hud();
+    Hud();
 
+    void update( int* points, int* health, std::string playername);
     void render( sf::RenderTarget* target );
-    void update( float str1, float str2 );
+
+private:
+    sf::Font font;
+    sf::Text uiText;
+
+   
 };

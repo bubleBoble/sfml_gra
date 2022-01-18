@@ -1,9 +1,9 @@
 {
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
         "iostream": "cpp",
-        "iosfwd": "cpp",
         "new": "cpp",
-        "string": "cpp",
         "array": "cpp",
         "atomic": "cpp",
         "*.tcc": "cpp",
@@ -30,12 +30,14 @@
         "memory_resource": "cpp",
         "numeric": "cpp",
         "random": "cpp",
+        "string": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
         "fstream": "cpp",
         "initializer_list": "cpp",
+        "iosfwd": "cpp",
         "istream": "cpp",
         "limits": "cpp",
         "ostream": "cpp",
@@ -43,7 +45,5 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    },
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "C_Cpp.errorSquiggles": "Enabled"
+    }
 }

@@ -1,48 +1,32 @@
 #include "Hud.h"
 
-void Hud::initHud( sf::Vector2u _bounds ) 
-{   
-    std::string fontPath = RESOURCE_PATH;
-    fontPath += "sansation.ttf";
-    if (!font.loadFromFile( fontPath ))
-        return;
-    
-    font.loadFromFile(fontPath);
-
-    lTop = new sf::Text;
-    rTop = new sf::Text;
-
-    lTop->setFont( font );
-    lTop->setCharacterSize( 30 );
-    lTop->setPosition( 20, 20 );
-    lTop->setFillColor( sf::Color::Black );
-
-    rTop->setFont(font);
-    rTop->setCharacterSize( 30 );
-    rTop->setPosition( 20, this->lTop->getGlobalBounds().height+50 );
-    rTop->setFillColor( sf::Color::Black );
-}
-
-Hud::Hud( sf::RenderTarget* target  )
-{   
-    this->bounds = target->getSize();
-    initHud( bounds );
-}
-
-Hud::~Hud() 
+Hud::Hud()
 {
-    delete this->lTop;
-    delete this->rTop;
+    std::string fontpath = RESOURCE_PATH;
+    fontpath += "sansation.ttf";
+    if ( !this->font.loadFromFile(fontpath) )
+        log("can't load font");
+
+    this->uiText.setFont(this->font);
+    this->uiText.setCharacterSize(50);
+    this->uiText.setFillColor(sf::Color::White);
+    this->uiText.setOutlineThickness(1);
+    this->uiText.setOutlineColor(sf::Color::Cyan);
+    this->uiText.setString("NONE");
 }
 
-void Hud::render( sf::RenderTarget* target ) 
+void Hud::update( int* points, int* health, std::string playername )
 {
-    target->draw( *lTop );
-    target->draw( *rTop );
+    std::stringstream ss;
+
+    ss << "Points: " << *points << std::endl 
+    <<  "Health: " << *health << std::endl
+    << playername;
+
+    this->uiText.setString( ss.str() );
 }
 
-void Hud::update( float str1, float str2 ) 
+void Hud::render( sf::RenderTarget* target )
 {
-    this->lTop->setString( "collisions :  " + std::to_string( (int)str1) );
-    this->rTop->setString( "life       :  " + std::to_string( (int)str2) );
+    target->draw( this->uiText );
 }

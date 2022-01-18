@@ -1,6 +1,6 @@
 CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: \
- C:\zcPg\004_gra_na_infe\src\Player.cpp \
- C:/zcPg/004_gra_na_infe/include/Player.h \
+ C:\zcPg\007_gra_na_infe_N03Copy\src\Player.cpp \
+ C:/zcPg/007_gra_na_infe_N03Copy/include/Player.h \
  C:/PROGRA~2/SFML/include/SFML/Graphics.hpp \
  C:/PROGRA~2/SFML/include/SFML/Window.hpp \
  C:/PROGRA~2/SFML/include/SFML/System.hpp \
@@ -211,9 +211,10 @@ CMakeFiles/OUTPUT.dir/src/Player.cpp.obj: \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/Text.hpp \
  C:/PROGRA~2/SFML/include/SFML/Graphics/VertexBuffer.hpp \
- C:/zcPg/004_gra_na_infe/include/config.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
- C:/zcPg/004_gra_na_infe/include/Entity.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
+ C:/zcPg/007_gra_na_infe_N03Copy/include/Animation.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
- C:/zcPg/004_gra_na_infe/include/animation2xxx.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdlib.h \
+ C:/zcPg/007_gra_na_infe_N03Copy/include/config.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h

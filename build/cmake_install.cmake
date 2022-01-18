@@ -1,8 +1,8 @@
-# Install script for directory: C:/zcPg/004_gra_na_infe
+# Install script for directory: C:/zcPg/007_gra_na_infe_N03Copy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/001_abc_ct")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/grainf_copy")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/zcPg/004_gra_na_infe/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/zcPg/007_gra_na_infe_N03Copy/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

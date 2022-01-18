@@ -1,47 +1,52 @@
 [
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\main.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\main.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/main.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\main.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\main.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/main.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Game.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Game.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/Game.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Game.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Game.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Game.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Entity.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Entity.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/Entity.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Enemy.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Enemy.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Enemy.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Hud.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Hud.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/Hud.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\hud.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\hud.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/hud.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Player.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Player.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/Player.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Player.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Player.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Player.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\animation2xxx.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\animation2xxx.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/animation2xxx.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Animation.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Animation.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Animation.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\FireBall.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\FireBall.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/FireBall.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Bullet.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Bullet.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Bullet.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\FireballAnimation.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\FireballAnimation.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/FireballAnimation.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Mainmenu.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Mainmenu.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Mainmenu.cpp"
 },
 {
-  "directory": "C:/zcPg/004_gra_na_infe/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Spawner.cpp.obj -c C:\\zcPg\\004_gra_na_infe\\src\\Spawner.cpp",
-  "file": "C:/zcPg/004_gra_na_infe/src/Spawner.cpp"
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\StartScreen.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\StartScreen.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/StartScreen.cpp"
+},
+{
+  "directory": "C:/zcPg/007_gra_na_infe_N03Copy/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/OUTPUT.dir/includes_CXX.rsp -g -o CMakeFiles\\OUTPUT.dir\\src\\Highscores.cpp.obj -c C:\\zcPg\\007_gra_na_infe_N03Copy\\src\\Highscores.cpp",
+  "file": "C:/zcPg/007_gra_na_infe_N03Copy/src/Highscores.cpp"
 }
 ]

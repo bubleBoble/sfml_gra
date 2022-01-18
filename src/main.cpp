@@ -2,14 +2,11 @@
 
 int main() {
 
-    
-    bool runGame = true;
+    std::srand(time(NULL));
 
-    if (runGame) 
-    {
-        Game game;
-        game.run();
-    }
+    Game game;
+    
+    game.run();
     
     return 0;
 }
