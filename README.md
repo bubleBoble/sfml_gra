@@ -1,4 +1,4 @@
-Mała gra napisana przy okazji kursu C++ na uczelni
+mała gra w c++
 
 biblioteka SFML
 
