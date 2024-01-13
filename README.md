@@ -1,6 +1,4 @@
-mała gra w c++
-
-biblioteka SFML
+Game written while leraning c++ basics, SFML
 
 
 
